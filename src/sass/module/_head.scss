@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.head {
+text-align: center;
+}
+
+.head__title-en {
+font-size: rem(32);
+color: $deepGreen;
+line-height: 1.25;
+display: inline-block;
+font-weight: $regular;
+  @include mq("md") {
+ font-size: rem(40);
+ line-height: 1;
+  }
+}
+
+.head__title-jp {
+    display: block;
+    font-weight: $regular;
+    font-size: rem(12);
+    line-height: 1.5;
+    color: $accentGreen;
+    padding-top: rem(4);
+    @include mq("md") {
+        padding-top: 8px;
+    }
+}
+.head__title--green{
+    color: $accentGreen;
+}
+
+.head__title--green-revers{
+      @include mq("md") {
+          color: $lightGreen;
+      }
+}
+
+.head__title-en--revers,
+.head__title-jp--revers{
+      @include mq("md") {
+          color: $white;
+      }
+}
