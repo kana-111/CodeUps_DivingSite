@@ -18,7 +18,7 @@
 
 .heading__title-jp{
   display: block;
-  padding-top: rem(4);
+  padding-top: rem(6);
   color: $accentGreen;
   font-weight: $regular;
   font-size: rem(12);
@@ -52,4 +52,11 @@
 }
 .heading__title-en.heading__title-en--large{
   font-size: rem(80);
+  line-height: 0.7;
+}
+
+.heading__title-jp--large.heading__title-jp{
+  font-size: 10px;
+  padding-top: rem(3);
+
 }

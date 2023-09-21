@@ -3,14 +3,23 @@
 .title{
   border-bottom: rem(1) solid $accentGreen;
   color: $deepGreen;
-  font-weight: $bold;
+  font-weight: $normal;
   font-size: rem(16);
-  line-height: 1.5;
+  line-height: 1;
 }
 
-.title.title--large{
-  font-size: rem(16);
+.title.title--large-info{
+  font-size: rem(20);
+  font-weight: $bold;
     @include mq("md") {
    font-size: rem(24);
+    }
+}
+
+
+.title.title.title--large-voice{
+  line-height: 1.4;
+    @include mq("md") {
+   
     }
 }

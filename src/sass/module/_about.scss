@@ -1,15 +1,15 @@
 @use "global" as *;
 
 .about__inner{
-  padding-top: rem(80);
-  padding-bottom: rem(70);
+  padding-top: rem(83);
+  padding-bottom: rem(72);
   @include mq("md"){
     padding-top: rem(140);
     padding-bottom: rem(140);
   }
 }
 .about__content{
-  margin-top: rem(24);
+  margin-top: rem(26);
   @include mq("md"){
     position: relative;
     margin-top: rem(40);
@@ -34,21 +34,19 @@
   }
 }
 .about_text{
-  padding-top: rem(16);
+  padding-top: rem(19);
+  white-space: normal;
   @include mq("md"){
     padding-top: 0;
   }
 }
 .about__button-wrap{
   text-align: center;
-}
-.about__button{
-  margin-top: rem(50);
+  padding-top: rem(47);
   @include mq("md"){
-    margin-top: rem(40);
+    padding-top: rem(40);
   }
 }
-
 .about__layer-image{
   position: absolute;
   right: rem(-97);

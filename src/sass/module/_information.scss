@@ -5,7 +5,7 @@
 
 .information__inner{
   padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-bottom: rem(82);
   @include mq("md"){
     padding-top: rem(100);
     padding-bottom: rem(100);
@@ -16,7 +16,7 @@
 .information__content{
   display: flex;
   flex-direction: column;
-  padding-top: rem(24);
+  padding-top: rem(26);
   @include mq("md"){
     flex-direction: row;
     align-items: center;
@@ -30,8 +30,12 @@
   }
 }
 
+.information__title{
+  padding-bottom: rem(2);
+}
+
 .information__text-area{
-  padding-top: rem(24);
+  padding-top: rem(30);
   @include mq("md"){
     width: 50%;
     padding-left: rem(48);
@@ -41,12 +45,10 @@
 
 
 .information__text{
-  padding-top: rem(8);
+  padding-top: rem(10);
 }
 
-.information__button{
-  margin-top: rem(40);
-}
 .information__button-wrap{
   text-align: center;
+  padding-top: rem(37);
 }

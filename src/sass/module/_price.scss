@@ -8,7 +8,7 @@
 
 .price__inner{
   padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-bottom: rem(82);
   @include mq("md"){
     padding-top: rem(80);
     padding-bottom: rem(80);
@@ -19,7 +19,7 @@
 .prise__content{
   display: flex;
   flex-direction: column;
-  padding-top: rem(24);
+  padding-top: rem(26);
   @include mq("md"){
     flex-direction: row-reverse;
     padding-top: rem(40);
@@ -40,7 +40,7 @@
   object-fit: cover;
 }
 .price__menu-list{
-  padding-top: rem(40);
+  padding-top: rem(48);
   @include mq("md"){
     width: 50%;
     padding-top: 0;
@@ -48,10 +48,12 @@
 }
 
 .price__menu-group:not(:first-child){
-  padding-top: rem(40);
+  padding-top: rem(47);
 }
 
-
+.price__title{
+  padding-bottom: rem(4);
+}
 .price__menu-item{
   display: flex;
   align-items: end;
@@ -91,12 +93,10 @@
 
 .price__button-wrap{
   text-align: center;
-}
-.price__button{
-  margin-top: rem(40);
-  @include mq("md"){
-    margin-top: rem(80);
-  }
+  padding-top: rem(39);
+    @include mq("md") {
+   padding-top: rem(80);
+    }
 }
 
 .price__layer-fish{

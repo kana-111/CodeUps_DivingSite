@@ -9,7 +9,7 @@
 }
 .contact__inner{
   padding-top: rem(80);
-  padding-bottom: rem(100);
+  padding-bottom: rem(102);
   @include mq("md"){
     padding-top: rem(140);
     padding-bottom: rem(160);
@@ -31,8 +31,8 @@
 }
 
 .contact__shop-desc{
-  padding-right: rem(25);
-  padding-left: rem(25);
+  padding-right: rem(40);
+  padding-left: rem(40);
   @include mq("md"){
     width: 50%;
     padding: rem(0) rem(50);
@@ -40,19 +40,9 @@
 }
 
 .contact__logo-container{
+  border-bottom: $accentGreen rem(1) solid;
+  padding-bottom: 6px;
   @include mq("md"){
-  }
-}
-.contact__logo-container::after{
-  display: inline-block;
-  width: 100%;
-  height: rem(1);
-  margin-top: rem(6);
-  background-color: $accentGreen;
-  content: "";
-  @include mq("md"){
-    margin-top: rem(8);
-    box-shadow: none;
   }
 }
 
@@ -75,7 +65,7 @@
   }
 }
 .contact__shop-info{
-  padding-top: rem(16);
+  padding-top: rem(20);
   @include mq("md"){
     padding-top: rem(24);
   }
@@ -85,7 +75,7 @@
   color: $deepGreen;
   font-weight: $regular;
   font-size: rem(16);
-  line-height: 1.5;
+  line-height: 1;
   font-family: "Noto Sans Jp",sans-serif;
   text-align: center;
   @include mq("md"){
@@ -94,10 +84,12 @@
     text-shadow: none;
   }
 }
-
+.contact__info:not(:first-child){
+  padding-top: rem(12);
+}
 .contact__map-container{
   width: 100%;
-  margin-top: rem(16);
+  margin-top: rem(19);
   background-color: $gray;
   aspect-ratio: 295 / 160;
   @include mq("md"){
@@ -112,7 +104,7 @@ object-fit: cover;
 }
 
 .contact_contact-area{
-  padding-top: rem(40);
+  padding-top: rem(54);
   @include mq("md"){
     width: 50%;
     margin-left: rem(32);
@@ -136,10 +128,10 @@ object-fit: cover;
 
 .contact__button-wrap{
   text-align: center;
-}
-
-.contact__button{
-  margin-top: 40px;
+  padding-top: rem(36);
+    @include mq("md") {
+   padding-top: rem(40);
+    }
 }
 
 .contact__layer-fish{

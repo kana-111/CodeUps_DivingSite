@@ -6,8 +6,8 @@
 }
 
 .voice__inner{
-  padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-top: rem(82);
+  padding-bottom: rem(82);
   @include mq("md"){
     padding-top: rem(140);
     padding-bottom: rem(140);
@@ -17,8 +17,8 @@
 .voice__cards{
   display: grid;
   justify-content: center;
-  margin-top: rem(24);
-  row-gap: rem(40);
+  margin-top: rem(42);
+  row-gap: rem(38);
   column-gap: rem(40);
   grid-template-columns: repeat(auto-fit, min(100%, rem(520)));
   @include mq("md"){
@@ -27,13 +27,12 @@
 }
 .voice__button-wrap{
   text-align: center;
-}
-.voice__button{
-  margin-top: rem(40);
+  padding-top: rem(37);
   @include mq("md"){
-    margin-top: rem(80);
+    padding-top: rem(80);
   }
 }
+
 
 .voice__layer-fish{
   position: absolute;
