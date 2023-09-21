@@ -1,0 +1,67 @@
+@use "global" as *;
+
+.site-map__wrap{
+  display: grid;
+  @include mq("md"){
+    margin-top: rem(24);
+
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: none;
+  }
+
+  column-gap: rem(16);
+  row-gap: rem(40);
+  grid-template-columns: repeat(2,auto) ;
+  grid-template-rows: repeat(2,auto);
+}
+.site-map__group:nth-child(2){
+  @include mq("md"){
+    grid-column: 3 / 4;
+  }
+}
+.site-map__group:nth-child(3){
+  @include mq("md"){
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+.site-map__unit{
+  display: flex;
+  flex-direction: column;
+
+  gap: rem(24);
+}
+.site-map__unit:not(:first-child){
+  padding-top: rem(40);
+}
+.site-map__main-menu, .site-map__item{
+  display: inline-block;
+}
+
+.site-map__main-menu{
+  display: flex;
+  color: $white;
+  font-weight: $bold;
+  font-size: rem(16);
+  line-height: 1.125;
+}
+
+.site-map__main-menu::before{
+  width: rem(18);
+  height: rem(18);
+  margin-right: rem(4);
+  background-image: url(../images/common/starfish.png);
+  background-size: cover;
+  content: "";
+}
+.site-map__main-menu span{
+  display: inline-block;
+}
+
+.site-map__item{
+  padding-left: rem(22);
+  color: $white;
+  font-weight: $regular;
+  font-size: rem(16);
+  line-height: 1.125;
+}

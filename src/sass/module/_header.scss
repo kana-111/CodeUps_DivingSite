@@ -1,0 +1,86 @@
+@use "global" as *;
+//ヘッダー
+.header {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: rem(80);
+  background-color: rgba($color: $deepGreen, $alpha: 0.68);
+  @include mq("md") {
+    height: rem(90);
+  }
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+  padding-right: rem(15);
+  padding-left: rem(15);
+  @include mq("md") {
+    padding-right: rem(40);
+    padding-left: rem(40);
+  }
+}
+.header__name {
+  z-index: 150;
+  width: rem(102);
+  @include mq("md") {
+    width: rem(133);
+  }
+}
+
+.header__nav {
+  height: inherit;
+  @include mq("md") {
+    margin-left: auto;
+  }
+}
+.header__items {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+.header__item {
+  height: inherit;
+}
+.header__item:not(:first-child) {
+  padding-left: 2.77vw;
+}
+.header__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  position: relative;
+}
+.header__link::after {
+  content: "";
+  position: absolute;
+  bottom: rem(20);
+  left: 0;
+  width: 100%;
+  height: rem(1);
+  background-color: $white;
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  transform-origin: center top; /*上部中央基点*/
+}
+.header__link:hover::after {
+  transform: scale(1, 1); /*X方向にスケール拡大*/
+}
+.header__link-en {
+  display: inline-block;
+  color: $white;
+  font-size: REM(18);
+  line-height: 1;
+}
+
+.header__link-jp {
+  padding-top: rem(4);
+  color: $white;
+  font-size: rem(10);
+  line-height: 1.5;
+}

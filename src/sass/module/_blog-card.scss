@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.blog-card{
+  box-shadow: rem(2) rem(2) rem(10) rgba($color: $black, $alpha: .25);
+  background-color: $white;
+}
+
+.blog-card__inner{
+  padding: rem(16) rem(16) rem(24);
+}
+
+.blog-card__image-container{
+  width: 100%;
+}
+.blog-card__image-container img{
+  width: 100%;
+
+  object-fit: cover;
+  aspect-ratio: 301 / 201;
+}
+
+.blog-card__body{
+  padding-top: rem(24);
+}
+
+.blog-card__time{
+  color: $deepGreen;
+  font-weight: $regular;
+  font-size: rem(12);
+}
+
+.blog-card__title{
+  padding-top: 0;
+}
+
+
+.blog-card__text{
+  padding-top: rem(16);
+}

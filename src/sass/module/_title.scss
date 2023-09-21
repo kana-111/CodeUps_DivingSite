@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.title{
+  border-bottom: rem(1) solid $accentGreen;
+  color: $deepGreen;
+  font-weight: $bold;
+  font-size: rem(16);
+  line-height: 1.5;
+}
+
+.title.title--large{
+  font-size: rem(16);
+    @include mq("md") {
+   font-size: rem(24);
+    }
+}

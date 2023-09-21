@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.campaign__inner {
+  padding-top: rem(40);
+  @include mq("md") {
+    padding-top: rem(120);
+  }
+}
+
+.campaign__slider {
+  width: 100%;
+  padding: 0 rem(14);
+  @include mq("md") {
+    padding: 0 rem(180);
+    position: relative;
+  }
+}
+
+.campaign__slider-wrap {
+  padding-top: rem(24);
+  padding-bottom: rem(40);
+  @include mq("md") {
+    padding-top: rem(40);
+    padding-bottom: rem(80);
+  }
+}
+
+.campaign__slider-arrows {
+  display: flex;
+  position: absolute;
+  top: rem(22);
+  left: calc(50% + rem(400));
+  transform: translateX(-50%);
+  gap: rem(80);
+}
+
+.campaign__button-wrap {
+  text-align: center;
+}

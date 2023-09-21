@@ -1,0 +1,155 @@
+@use "global" as *;
+
+.contact{
+  position: relative;  
+  filter: drop-shadow(0 rem(4) rem(4) rgba($color: $black, $alpha: .25));
+    @include mq("md") {
+   filter: none;
+    }
+}
+.contact__inner{
+  padding-top: rem(80);
+  padding-bottom: rem(100);
+  @include mq("md"){
+    padding-top: rem(140);
+    padding-bottom: rem(160);
+  }
+}
+.contact__container{
+  display: flex;
+  flex-direction: column;
+  @include mq("md"){
+    flex-direction: row;
+    width: 75%;
+    max-width: rem(1100);
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+    box-shadow: rem(4) rem(4) rem(10) rgba($color: $black, $alpha: .25);
+  }
+}
+
+.contact__shop-desc{
+  padding-right: rem(25);
+  padding-left: rem(25);
+  @include mq("md"){
+    width: 50%;
+    padding: rem(0) rem(50);
+  }
+}
+
+.contact__logo-container{
+  @include mq("md"){
+  }
+}
+.contact__logo-container::after{
+  display: inline-block;
+  width: 100%;
+  height: rem(1);
+  margin-top: rem(6);
+  background-color: $accentGreen;
+  content: "";
+  @include mq("md"){
+    margin-top: rem(8);
+    box-shadow: none;
+  }
+}
+
+.contact__logo-container img{
+  width: rem(174);
+  margin: 0 auto;
+
+  @include mq("md"){
+    width: rem(200);
+  }
+}
+
+.contact__info-wrap{
+  display: flex;
+  flex-direction: column;
+  @include mq("md"){
+    flex-direction: row;
+
+    gap: rem(21);
+  }
+}
+.contact__shop-info{
+  padding-top: rem(16);
+  @include mq("md"){
+    padding-top: rem(24);
+  }
+}
+
+.contact__info{
+  color: $deepGreen;
+  font-weight: $regular;
+  font-size: rem(16);
+  line-height: 1.5;
+  font-family: "Noto Sans Jp",sans-serif;
+  text-align: center;
+  @include mq("md"){
+    text-align: left;
+    white-space: nowrap;
+    text-shadow: none;
+  }
+}
+
+.contact__map-container{
+  width: 100%;
+  margin-top: rem(16);
+  background-color: $gray;
+  aspect-ratio: 295 / 160;
+  @include mq("md"){
+    box-shadow: none;
+    aspect-ratio: 273 / 148;
+    width: 62%;
+  }
+}
+.contact__map-container iframe{
+width: 100%;
+object-fit: cover;
+}
+
+.contact_contact-area{
+  padding-top: rem(40);
+  @include mq("md"){
+    width: 50%;
+    margin-left: rem(32);
+    padding-top: 0;
+    border-left: rem(1) solid $accentGreen;
+  }
+}
+
+
+
+.contact__text{
+  padding-top: rem(8);
+  color: $accentGreen;
+  font-weight: $regular;
+  font-size: rem(14);
+  text-align: center;
+  @include mq("md"){
+    text-shadow: none;
+  }
+}
+
+.contact__button-wrap{
+  text-align: center;
+}
+
+.contact__button{
+  margin-top: 40px;
+}
+
+.contact__layer-fish{
+  position: absolute;
+  top: rem(54);
+  right: 4%;
+  width: 29.06%;
+  max-width: rem(301);
+  @include mq("md"){
+    top: rem(100);
+    right: 3.47%;
+  }
+}

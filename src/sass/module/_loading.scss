@@ -1,0 +1,71 @@
+@use "global" as *;
+.loading {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+width: 100%;
+height: 100vh;
+background-color: $white;
+}
+
+.loading__title-container {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.loading__title {
+  font-family: "Lato", "Noto Sans JP", sans-serif;
+  text-transform: uppercase;
+  font-size: rem(50);
+  font-weight: $regular;
+  letter-spacing: 0.54em;
+  color: $accentGreen;
+  text-align: center;
+  text-indent: 0.54em;
+  @include mq("md") {
+    line-height: 1.25;
+    font-size: rem(80);
+  }
+}
+
+.loading__sub-title {
+  font-size: rem(20);
+  color: $accentGreen;
+  text-align: center;
+}
+
+.loading__title.loading__title--white,
+.loading__sub-title.loading__sub-title--white {
+  color: $white;
+}
+.loading__image-container {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: 100%;
+}
+
+.loading__image-left,
+.loading__image-right {
+  width: 50%;
+  height: inherit;
+}
+.loading__image-left img,
+.loading__image-left picture {
+  height: inherit;
+  object-fit: cover;
+  object-position: right 50%;
+}
+
+.loading__image-right img,
+.loading__image-right picture {
+  height: inherit;
+  object-fit: cover;
+  object-position: left 50%;
+}

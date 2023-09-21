@@ -1,0 +1,14 @@
+@use "global" as *;
+
+
+.layer-image{
+  position: relative;
+}
+.layer-image__top{
+  position: absolute;
+  width: 37.1%;
+}
+.layer-image__bottom{
+  padding-top: 8.47%;
+  padding-left: 18.55%;
+}
