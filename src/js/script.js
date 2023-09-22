@@ -1,16 +1,12 @@
 jQuery(function ($) {
-  // この中であればWordpressでも「$」が使用可能になる
+
 });
 
 // ハンバーガーメニュー
 $(function () {
-  $(".js-hamburger").click(function () {
-    $(this).toggleClass("is-active");
-    if ($(this).hasClass("is-active")) {
-      $(".js-drawer").addClass("is-active");
-    } else {
-      $(".js-drawer").removeClass("is-active");
-    }
+  $(".js-hamburger,.js-drawer").click(function () {
+    $(".js-hamburger").toggleClass("is-active");
+    $(".js-drawer").fadeToggle();
   });
 });
 
@@ -97,16 +93,11 @@ function loadingAnime() {
       duration: 1.7,
       autoAlpha: 0,
     })
-    .to(".js-loading-text--white", {
+    .to(".js-loading-text--white,.js-loading", {
       delay: 2,
-      duration: 0.5,
+      duration: 1.5,
       autoAlpha: 0,
     })
-    .to(".js-loading", {
-      delay: 0.5,
-      autoAlpha: 0,
-      duration: 1.6,
-    });
 }
 loadingAnime();
 
@@ -140,8 +131,8 @@ function PageTopAnime() {
 
   var wH = window.innerHeight; //画面の高さを取得
   var footerPos = $(".footer").offset().top; //footerの位置を取得
-  if (scroll + wH >= footerPos + 12) {
-    var pos = scroll + wH - footerPos + 12; //スクロールの値＋画面の高さからfooterの位置＋12pxを引いた場所を取得し
+  if (scroll + wH >= footerPos + 8) {
+    var pos = scroll + wH - footerPos + 8; //スクロールの値＋画面の高さからfooterの位置＋12pxを引いた場所を取得し
     $(".page-top").css("bottom", pos); //.page-topに上記の値をCSSのbottomに直接指定してフッター手前で止まるようにする
   } else {
     //それ以外は

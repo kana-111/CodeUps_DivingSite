@@ -19,12 +19,13 @@ transform: translate(-50%,-50%);
 .loading__title {
   font-family: "Lato", "Noto Sans JP", sans-serif;
   text-transform: uppercase;
-  font-size: rem(50);
+  font-size: rem(40);
   font-weight: $regular;
   letter-spacing: 0.54em;
   color: $accentGreen;
   text-align: center;
   text-indent: 0.54em;
+  line-height: 1;
   @include mq("md") {
     line-height: 1.25;
     font-size: rem(80);

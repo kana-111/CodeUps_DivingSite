@@ -61,7 +61,7 @@
   top: 40%;
   right: 0;
   transform: rotate(30deg) translateY(-50%);
-  transform: background-color .3s;
+  transition: background-color .3s;
   width: rem(10);
   height: rem(1);
   border-radius: 100vh;

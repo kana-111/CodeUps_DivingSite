@@ -20,7 +20,7 @@
   display: grid;
   justify-content: center;
   margin-top: rem(24);
-  grid-row-gap: rem(40);
+  grid-row-gap: rem(37);
   grid-column-gap: rem(40);
   grid-template-columns: repeat(auto-fit, min(100%, rem(333)));
   @include mq("md"){
@@ -30,7 +30,7 @@
 
 .blog__button-wrap{
   text-align: center;
-  padding-top: rem(36);
+  padding-top: rem(41);
   @include mq("md"){
     padding-top: rem(80);
   }

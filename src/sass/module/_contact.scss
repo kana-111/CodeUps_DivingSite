@@ -1,24 +1,24 @@
 @use "global" as *;
 
-.contact{
-  position: relative;  
-  filter: drop-shadow(0 rem(4) rem(4) rgba($color: $black, $alpha: .25));
-    @include mq("md") {
-   filter: none;
-    }
+.contact {
+  position: relative;
+  filter: drop-shadow(0 rem(4) rem(4) rgba($color: $black, $alpha: 0.25));
+  @include mq("md") {
+    filter: none;
+  }
 }
-.contact__inner{
+.contact__inner {
   padding-top: rem(80);
-  padding-bottom: rem(102);
-  @include mq("md"){
+  padding-bottom: rem(103);
+  @include mq("md") {
     padding-top: rem(140);
     padding-bottom: rem(160);
   }
 }
-.contact__container{
+.contact__container {
   display: flex;
   flex-direction: column;
-  @include mq("md"){
+  @include mq("md") {
     flex-direction: row;
     width: 75%;
     max-width: rem(1100);
@@ -26,89 +26,98 @@
     margin-left: auto;
     padding-top: rem(80);
     padding-bottom: rem(79);
-    box-shadow: rem(4) rem(4) rem(10) rgba($color: $black, $alpha: .25);
+    box-shadow: rem(4) rem(4) rem(10) rgba($color: $black, $alpha: 0.25);
   }
 }
 
-.contact__shop-desc{
+.contact__shop-desc {
   padding-right: rem(40);
   padding-left: rem(40);
-  @include mq("md"){
+  @include mq("md") {
     width: 50%;
     padding-left: rem(50);
     padding-right: rem(19);
   }
 }
 
-.contact__logo-container{
+.contact__logo-container {
   border-bottom: $accentGreen rem(1) solid;
   padding-bottom: rem(5);
-  @include mq("md"){
+  @include mq("md") {
     padding-bottom: rem(8);
   }
 }
 
-.contact__logo-container img{
+.contact__logo-container img {
   width: rem(174);
   margin: 0 auto;
 
-  @include mq("md"){
+  @include mq("md") {
     width: rem(200);
   }
 }
 
-.contact__info-wrap{
+.contact__info-wrap {
   display: flex;
   flex-direction: column;
-  @include mq("md"){
+  @include mq("md") {
     flex-direction: row;
     gap: rem(24);
   }
 }
-.contact__shop-info{
+.contact__shop-info {
   padding-top: rem(20);
-  @include mq("md"){
+  @include mq("md") {
     padding-top: rem(27);
   }
 }
 
-.contact__info{
+.contact__info {
   color: $deepGreen;
   font-weight: $regular;
   font-size: rem(16);
   line-height: 1;
-  font-family: "Noto Sans Jp",sans-serif;
+  font-family: "Noto Sans Jp", sans-serif;
   text-align: center;
-  @include mq("md"){
+  @include mq("md") {
     text-align: left;
     white-space: nowrap;
   }
 }
-.contact__info:not(:first-child){
+.contact__info:not(:first-child) {
   padding-top: rem(12);
 }
-.contact__map-container{
+.contact__map-container {
   width: 100%;
   margin-top: rem(19);
   background-color: $gray;
-  @include mq("md"){
-    width: 62%;
+  @include mq("md") {
+    // width: 62%;
     margin-top: rem(23);
-    
   }
 }
-.contact__map-container iframe{
-  aspect-ratio: 295 / 153;
+.contact__map {
+  position: relative;
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  padding-top: 51.86%;
+  aspect-ratio: 295/160;
   @include mq("md") {
-    aspect-ratio: 273 / 141;
+    padding-top: 54.21%;
+    aspect-ratio: 273/148;
   }
+}
+.contact__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.contact_contact-area{
+.contact_contact-area {
   padding-top: rem(53);
-  @include mq("md"){
+  @include mq("md") {
     width: 50%;
     margin-left: rem(61);
     padding-top: rem(34);
@@ -117,35 +126,33 @@
   }
 }
 
-
-
-.contact__text{
+.contact__text {
   padding-top: rem(8);
   color: $accentGreen;
   font-weight: $regular;
   font-size: rem(14);
   text-align: center;
-  @include mq("md"){
+  @include mq("md") {
     text-shadow: none;
     padding-top: rem(7);
   }
 }
 
-.contact__button-wrap{
+.contact__button-wrap {
   text-align: center;
   padding-top: rem(36);
-    @include mq("md") {
-   padding-top: rem(35);
-    }
+  @include mq("md") {
+    padding-top: rem(35);
+  }
 }
 
-.contact__layer-fish{
+.contact__layer-fish {
   position: absolute;
   top: rem(54);
   right: 4%;
   width: 29.06%;
   max-width: rem(301);
-  @include mq("md"){
+  @include mq("md") {
     top: rem(100);
     right: 3.47%;
   }

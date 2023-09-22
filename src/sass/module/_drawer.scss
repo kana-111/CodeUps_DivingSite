@@ -1,8 +1,6 @@
  @use "global" as *;
 //ドロワー
 .drawer-menu{
-  visibility: hidden;
-  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -11,16 +9,9 @@
   height: 100vh;
   background-color: $accentGreen;
   cursor: pointer;
-  transition: opacity .5s, visibility .5s;
-  @include mq("md"){
-    display: none;
-  }
+  display: none;
 }
 
-.drawer-menu.is-active{
-  visibility: visible;
-  opacity: 1;
-}
 .drawer-menu__inner{
   width: 100%;
   height: inherit;
