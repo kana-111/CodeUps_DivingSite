@@ -24,30 +24,30 @@
 .drawer-menu__inner{
   width: 100%;
   height: inherit;
-  padding-top: rem(104);
+  padding-top: rem(107);
   padding-right: rem(15);
   padding-left: rem(15);
 }
 .drawer-menu__item:not(:first-child){
-  padding-top: 50px;
+  padding-top: rem(50);
 }
 .drawer-menu__link{
   font-weight: $regular;
-  font-size: 18px;
+  font-size: rem(18);
 }
 .drawer-menu__link::before{
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
+  width: rem(20);
+  height: rem(20);
   background-image: url(/images/head-icon.svg);
   background-size: auto;
   background-repeat: no-repeat;
   content: "";
 }
 .drawer__contact{
-  width: 198px;
-  margin-top: 50px;
+  width: rem(198);
+  margin-top: rem(50);
 }

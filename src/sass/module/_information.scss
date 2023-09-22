@@ -19,8 +19,7 @@
   padding-top: rem(26);
   @include mq("md"){
     flex-direction: row;
-    align-items: center;
-    padding-top: rem(40);
+    padding-top: rem(38);
   }
 }
 
@@ -32,6 +31,9 @@
 
 .information__title{
   padding-bottom: rem(2);
+    @include mq("md") {
+   padding-bottom: rem(5);
+    }
 }
 
 .information__text-area{
@@ -39,6 +41,7 @@
   @include mq("md"){
     width: 50%;
     padding-left: rem(48);
+    padding-top: rem(64);
   }
 }
 

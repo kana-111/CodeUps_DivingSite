@@ -46,7 +46,7 @@
   height: inherit;
 }
 .header__item:not(:first-child) {
-  padding-left: 2.77vw;
+  padding-left: 2.79vw;
 }
 .header__link {
   display: flex;
@@ -74,7 +74,7 @@
 .header__link-en {
   display: inline-block;
   color: $white;
-  font-size: REM(18);
+  font-size: rem(18);
   line-height: 1;
 }
 

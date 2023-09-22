@@ -3,6 +3,6 @@
 .campaign-cards__item{
     width: rem(280);
       @include mq("md") {
-     width: rem(334);
+     width: rem(333);
       }
 }

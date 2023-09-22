@@ -18,8 +18,8 @@
 
 
 .title.title.title--large-voice{
-  line-height: 1.4;
+  line-height: 1.45;
     @include mq("md") {
-   
+   font-size: rem(24);
     }
 }

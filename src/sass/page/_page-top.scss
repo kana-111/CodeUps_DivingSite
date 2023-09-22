@@ -28,7 +28,7 @@
 @keyframes UpAnime{
   from {
     opacity: 0;
-	transform: translateY(120px);
+	transform: translateY(rem(120));
   }
   to {
     opacity: 1;
@@ -48,6 +48,6 @@
   }
   to {
   	opacity: 1;
-	transform: translateY(120px);
+	transform: translateY(rem(120));
   }
 }

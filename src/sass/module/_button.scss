@@ -4,12 +4,16 @@
   display: inline-block;
   position: relative;
   z-index: 1;
-  max-width: 300px;
+  max-width: rem(300);
   padding: rem(16) rem(40);
   border: rem(1) solid $accentGreen;
   background: $accentGreen;
   font-weight: bold;
   text-align: center;
+    @include mq("md") {
+   padding-bottom: rem(15);
+   padding-right: rem(38);
+    }
 }
 .button::after{
   position: absolute;

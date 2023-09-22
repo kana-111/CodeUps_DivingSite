@@ -7,6 +7,9 @@
 
 .blog-card__inner{
   padding: rem(18) rem(16) rem(21);
+    @include mq("md") {
+   padding-top: rem(16);
+    }
 }
 
 .blog-card__image-container{

@@ -11,4 +11,8 @@
 .layer-image__bottom{
   padding-top: rem(25);
   padding-left: rem(63);
+    @include mq("md") {
+   padding-top: rem(80);
+   padding-left: rem(200);
+    }
 }

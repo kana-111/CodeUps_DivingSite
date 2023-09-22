@@ -20,7 +20,7 @@
   padding-top: rem(26);
   padding-bottom: rem(41);
   @include mq("md") {
-    padding-top: rem(40);
+    padding-top: rem(38);
     padding-bottom: rem(80);
   }
 }
@@ -28,10 +28,10 @@
 .campaign__slider-arrows {
   display: flex;
   position: absolute;
-  top: rem(22);
-  left: calc(50% + rem(400));
+  top: rem(23);
+  left: calc(50% + rem(420));
   transform: translateX(-50%);
-  gap: rem(80);
+  gap: rem(100);
 }
 
 .campaign__button-wrap {

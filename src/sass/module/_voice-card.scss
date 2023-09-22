@@ -1,81 +1,90 @@
 @use "global" as *;
-.voice-card{
-  box-shadow: rem(2) rem(2) rem(10) rgba($color: $black, $alpha: .25);
+.voice-card {
+  box-shadow: rem(2) rem(2) rem(10) rgba($color: $black, $alpha: 0.25);
   background-color: $white;
 }
 
-.voice-card__inner{
-  padding: rem(19) rem(16) rem(24);
-  @include mq("md"){
-    padding: rem(24);
+.voice-card__inner {
+  padding: rem(20) rem(16) rem(20);
+  @include mq("md") {
+    padding: rem(24) rem(24) rem(21);
   }
 }
 
-.voice-card__head{
+.voice-card__head {
   display: flex;
-  @include mq("md"){
-    gap: rem(16);
+  @include mq("md") {
+  }
+}
+.voice-card__head-text-wrap{
+    @include mq("md") {
+   padding-top: rem(24);
+    }
+}
+
+.voice-card__head-text {
+  width: 49.60%;
+  @include mq("md") {
+    width: 58.47%;
   }
 }
 
-.voice-card__head-text{
-  padding-right: 4px ;
-  width: 50%;
-}
-
-
-.voice-card__personal{
+.voice-card__personal {
   color: $deepGreen;
   font-weight: $regular;
   font-size: rem(12);
   line-height: 1;
+    @include mq("md") {
+   padding-top: rem(21);
+    }
 }
-.voice-card__head-text-inner{
+.voice-card__head-text-inner {
   display: flex;
   flex-direction: column;
-  @include mq("md"){
+  @include mq("md") {
     flex-direction: row;
-    align-items: end;
   }
 }
 
-.voice-card__tag{
+.voice-card__tag {
   display: inline-block;
   margin-right: auto;
-  padding: rem(10) rem(12) rem(8);
+  padding: rem(10) rem(10) rem(6) rem(12);
   border: $accentGreen rem(1) solid;
   color: $accentGreen;
   font-size: rem(12);
   line-height: 1;
-  @include mq("md"){
+  @include mq("md") {
     margin-right: 0;
     margin-left: auto;
+    padding: rem(12) rem(15) rem(8);
   }
 }
 
-.voice-card__title{
+.voice-card__title {
   padding-top: rem(7);
-  padding-bottom: rem(2);
-    @include mq("md") {
-      padding-top: rem(8);
-   
-    }
+  @include mq("md") {
+    padding-top: rem(12);
+  }
 }
 
-.voice-card__head-image{
-  padding-left: rem(4);
-  width: 50%;
-  padding-top: rem(3);
-    @include mq("md") {
-      max-width: rem(180);
-    }
+.voice-card__head-image {
+  width: calc(52.39% - rem(8));
+  margin-left: rem(11);
+  margin-top: rem(4);
+  @include mq("md") {
+    width: calc(100% - 58.47% - rem(16));
+    margin-left: rem(16);
+    margin-top: 0;
+
+  }
 }
-.voice-card__head-image img{
+.voice-card__head-image img {
   aspect-ratio: 151 /117;
 }
-.voice-card__text{
+.voice-card__text {
   padding-top: rem(18);
-  @include mq("md"){
-    padding-top: rem(40);
+  @include mq("md") {
+    padding-top: rem(42);
   }
 }

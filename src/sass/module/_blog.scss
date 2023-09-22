@@ -24,7 +24,7 @@
   grid-column-gap: rem(40);
   grid-template-columns: repeat(auto-fit, min(100%, rem(333)));
   @include mq("md"){
-    margin-top: rem(80);
+    margin-top: rem(78);
   }
 }
 
@@ -40,6 +40,6 @@
 .blog__layer-image{
   position: absolute;
   top: rem(24);
-  left: 8.77%;
+  left: 6.9%;
   width: rem(437);
 }

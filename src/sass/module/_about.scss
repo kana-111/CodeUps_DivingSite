@@ -2,9 +2,9 @@
 
 .about__inner{
   padding-top: rem(83);
-  padding-bottom: rem(72);
+  padding-bottom: rem(71);
   @include mq("md"){
-    padding-top: rem(140);
+    padding-top: rem(143);
     padding-bottom: rem(140);
   }
 }
@@ -12,7 +12,7 @@
   margin-top: rem(26);
   @include mq("md"){
     position: relative;
-    margin-top: rem(40);
+    margin-top: rem(38);
   }
 }
 .about__text-container{
@@ -20,7 +20,7 @@
   @include mq("md"){
     display: flex;
     position: absolute;
-    top: 30.257%;
+    top: 30.357%;
     right: 0;
     margin-right: rem(40);
     margin-left: rem(20);
@@ -37,14 +37,14 @@
   padding-top: rem(19);
   white-space: normal;
   @include mq("md"){
-    padding-top: 0;
+    padding-top: rem(2);
   }
 }
 .about__button-wrap{
   text-align: center;
   padding-top: rem(47);
   @include mq("md"){
-    padding-top: rem(40);
+    padding-top: rem(37);
   }
 }
 .about__layer-image{

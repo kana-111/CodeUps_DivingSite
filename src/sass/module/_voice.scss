@@ -6,11 +6,11 @@
 }
 
 .voice__inner{
-  padding-top: rem(82);
+  padding-top: rem(83);
   padding-bottom: rem(82);
   @include mq("md"){
-    padding-top: rem(140);
-    padding-bottom: rem(140);
+    padding-top: rem(144);
+    padding-bottom: rem(143);
   }
 }
 
@@ -18,16 +18,16 @@
   display: grid;
   justify-content: center;
   margin-top: rem(42);
-  row-gap: rem(38);
+  row-gap: rem(40);
   column-gap: rem(40);
   grid-template-columns: repeat(auto-fit, min(100%, rem(520)));
   @include mq("md"){
-    margin-top: rem(80);
+    margin-top: rem(27);
   }
 }
 .voice__button-wrap{
   text-align: center;
-  padding-top: rem(37);
+  padding-top: rem(40);
   @include mq("md"){
     padding-top: rem(80);
   }
@@ -36,7 +36,7 @@
 
 .voice__layer-fish{
   position: absolute;
-  top: rem(20);
+  top: rem(23);
   left: 6.94%;
   transform: scaleX(-1);
   width: rem(301);

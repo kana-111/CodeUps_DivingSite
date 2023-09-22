@@ -10,8 +10,8 @@
   padding-top: rem(80);
   padding-bottom: rem(82);
   @include mq("md"){
-    padding-top: rem(80);
-    padding-bottom: rem(80);
+    padding-top: rem(100);
+    padding-bottom: rem(103);
   }
 }
 
@@ -20,30 +20,30 @@
   display: flex;
   flex-direction: column;
   padding-top: rem(26);
+  column-gap: rem(93);
   @include mq("md"){
     flex-direction: row-reverse;
-    padding-top: rem(40);
-  }
-
-  column-gap: rem(93);
+    padding-top: rem(38);
+  column-gap: rem(91);
+}
 }
 
 .price__image-container{
   @include mq("md"){
     width: 50%;
+    aspect-ratio: 492 / 742;
   }
 }
 .price__image-container img{
   width: 100%;
   height: 100%;
-
   object-fit: cover;
 }
 .price__menu-list{
   padding-top: rem(48);
   @include mq("md"){
     width: 50%;
-    padding-top: 0;
+    padding-top: rem(7);
   }
 }
 
@@ -93,7 +93,7 @@
 
 .price__button-wrap{
   text-align: center;
-  padding-top: rem(39);
+  padding-top: rem(40);
     @include mq("md") {
    padding-top: rem(80);
     }
