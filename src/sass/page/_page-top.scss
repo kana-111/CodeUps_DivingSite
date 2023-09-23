@@ -2,52 +2,51 @@
 
 /*リンクを右下に固定*/
 .page-top {
-	position: fixed;
-    bottom: rem(15);
-    right: rem(15);
-	z-index: 2;
-	opacity: 0;
-    @include mq("md") {
-          right: rem(20);
-          bottom: rem(20);
-     
-      }
+  position: fixed;
+  bottom: rem(15);
+  right: rem(15);
+  z-index: 2;
+  opacity: 0;
+  @include mq("md") {
+    right: rem(20);
+    bottom: rem(20);
+  }
 }
 
-.page-top__link{
-    display: inline-block;
-    background-color: $white;
-    box-shadow: 0 rem(4) rem(4) rgba($color: $black, $alpha: 0.25);
+.page-top__link {
+  display: inline-block;
+  background-color: $white;
+  box-shadow: 0 rem(4) rem(4) rgba($color: $black, $alpha: 0.25);
 }
 
 /*　上に上がる動き　*/
 
-.page-top.UpMove{
-	animation: UpAnime 0.5s forwards;
+.page-top.UpMove {
+  animation: UpAnime 0.5s forwards;
 }
-@keyframes UpAnime{
+@keyframes UpAnime {
   from {
     opacity: 0;
-	transform: translateY(rem(120));
+    transform: translateY(rem(120));
   }
   to {
     opacity: 1;
-	transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 /*　下に下がる動き　*/
 
-.page-top.DownMove{
-	animation: DownAnime 0.5s forwards;
+.page-top.DownMove {
+  animation: DownAnime 0.5s forwards;
 }
-@keyframes DownAnime{
+@keyframes DownAnime {
   from {
-  	opacity: 1;
-	transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
   to {
-  	opacity: 1;
-	transform: translateY(rem(120));
+    opacity: 1;
+    transform: translateY(rem(120));
   }
 }

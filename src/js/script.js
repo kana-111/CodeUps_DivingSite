@@ -1,6 +1,42 @@
-jQuery(function ($) {
+jQuery(function ($) {});
 
+//loading
+const loading = document.querySelector(".js-loading");
+const body = document.querySelector(".js-body");
+window.addEventListener("load", () => {
+  function loadingAnime() {
+    body.classList.toggle("is-active");
+    gsap
+      .timeline()
+      .from(".js-loading-text", {
+        duration: 1.7,
+        autoAlpha: 0,
+      })
+      .from(".loading__image", {
+        duration: 1,
+        autoAlpha: 0,
+        y: 800,
+        stagger: {
+          each: 0.1,
+        },
+      })
+      .from(".js-loading-text--white", {
+        delay: 2,
+        duration: 1.7,
+        autoAlpha: 0,
+      })
+      .to(".js-loading-text--white,.js-loading", {
+        delay: 2,
+        duration: 1.5,
+        autoAlpha: 0,
+        onComplete: function () {
+          body.classList.toggle("is-active");
+        },
+      });
+  }
+  loadingAnime();
 });
+
 
 // ハンバーガーメニュー
 $(function () {
@@ -69,49 +105,6 @@ box.each(function () {
   });
 });
 
-//loading
-const loading = document.querySelector(".js-loading");
-const body = document.querySelector(".js-body");
-function loadingAnime() {
-  body.classList.toggle("is-active");
-  gsap
-    .timeline()
-    .from(".js-loading-text", {
-      duration: 1.7,
-      autoAlpha: 0,
-    })
-    .from(".loading__image", {
-      duration: 1,
-      autoAlpha: 0,
-      y: 800,
-      stagger: {
-        each: 0.1,
-      },
-    })
-    .from(".js-loading-text--white", {
-      delay: 2,
-      duration: 1.7,
-      autoAlpha: 0,
-    })
-    .to(".js-loading-text--white,.js-loading", {
-      delay: 2,
-      duration: 1.5,
-      autoAlpha: 0,
-    })
-}
-loadingAnime();
-
-function webStorage() {
-  if (sessionStorage.getItem("access")) {
-    loading.classList.add("is-active");
-    body.classList.add("is-active");
-  } else {
-    sessionStorage.setItem("access", 0);
-    openingAnime();
-  }
-}
-webStorage();
-
 //page-top
 //スクロールした際の動きを関数でまとめる
 function PageTopAnime() {
@@ -132,13 +125,13 @@ function PageTopAnime() {
   var wH = window.innerHeight; //画面の高さを取得
   var footerPos = $(".footer").offset().top; //footerの位置を取得
   if (scroll + wH >= footerPos + 8) {
-    var pos = scroll + wH - footerPos + 8; //スクロールの値＋画面の高さからfooterの位置＋12pxを引いた場所を取得し
+    var pos = scroll + wH - footerPos + 8; //スクロールの値＋画面の高さからfooterの位置＋8pxを引いた場所を取得し
     $(".page-top").css("bottom", pos); //.page-topに上記の値をCSSのbottomに直接指定してフッター手前で止まるようにする
   } else {
     //それ以外は
     if ($(".page-top").hasClass("UpMove")) {
       //UpMoveというクラス名がついていたら
-      $(".page-top").css("bottom", "rem(20)"); // 下から20pxの位置にページリンクを指定
+      $(".page-top").css("bottom", "15px"); // 下から20pxの位置にページリンクを指定
     }
   }
 }
@@ -159,7 +152,7 @@ $(".page-top").click(function () {
     {
       scrollTop: 0, //ページトップまでスクロール
     },
-    500
+    400
   ); //ページトップスクロールの速さ。数字が大きいほど遅くなる
   return false; //リンク自体の無効化
 });
