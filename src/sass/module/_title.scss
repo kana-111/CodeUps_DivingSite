@@ -1,14 +1,21 @@
 @use "global" as *;
 
 .title{
-  border-bottom: rem(1) solid $accentGreen;
-  color: $deepGreen;
-  font-weight: $normal;
-  font-size: rem(16);
-  line-height: 1;
+  border-bottom: $accentGreen rem(1) solid;
 }
 
-.title.title--large-info{
+.title__text{
+  color: $deepGreen;
+  font-weight: $bold;
+  font-size: rem(16);
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+
+.title__text.title__text--large-info{
   font-size: rem(20);
   font-weight: $bold;
     @include mq("md") {
@@ -17,8 +24,9 @@
 }
 
 
-.title.title.title--large-voice{
+.title__text.title__text--large-voice{
   line-height: 1.45;
+  -webkit-line-clamp: 2;
     @include mq("md") {
    font-size: rem(24);
     }

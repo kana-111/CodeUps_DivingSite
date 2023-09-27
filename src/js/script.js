@@ -67,6 +67,9 @@ const campaign__slider = new Swiper(".campaign__slider", {
   allowSlidePrev: true,
   slidesPerView: "auto",
   spaceBetween: 24,
+  loop: true,
+  autoHeight: true,
+  freeMode: true,
   breakpoints: {
     767: {
       spaceBetween: 40,

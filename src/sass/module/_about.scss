@@ -49,7 +49,7 @@
 }
 .about__layer-image{
   position: absolute;
-  right: rem(-97);
+  right: calc(50% - min(50vw, rem(690)) + rem(20));
   bottom: rem(-90);
   width: rem(194);
 }

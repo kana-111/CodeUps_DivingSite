@@ -7,9 +7,14 @@
 
 .blog-card__inner{
   padding: rem(18) rem(16) rem(21);
+  opacity: 1;
+  transition: opacity 0.3s;
     @include mq("md") {
    padding-top: rem(16);
     }
+}
+.blog-card__inner:hover{
+  opacity: 0.5;
 }
 
 .blog-card__image-container{

@@ -3,12 +3,23 @@
 .campaign-card{
   box-shadow: rem(2) rem(2) rem(10) rgba($color: $black, $alpha: .25);
   background-color: $white;
+  display: inline-block;
+  height: 100%;
+}
+
+.campaign-card__inner{
+  height: auto;
 }
 .campaign-card__image-container{
   width: 100%;
 }
 .campaign-card__image{
   width: 100%;
+  aspect-ratio: 280/188;
+  object-fit: cover;
+    @include mq("md") {
+   aspect-ratio: 334/223;
+    }
 }
 
 .campaign-card__body{
@@ -30,10 +41,20 @@
   }
 }
 
+
 .campaign-card__title{
   padding-top: rem(11);
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
   padding-bottom: rem(9);
 }
+
+// .campaign-card__title::after{
+// position: absolute;
+// bottom: rem(-9);
+// }
 
 .campaign-card__text{
   padding-top: rem(15);
