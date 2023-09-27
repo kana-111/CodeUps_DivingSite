@@ -1,112 +1,109 @@
 @use "global" as *;
 
-
-.price{
+.price {
   background-color: $lightGreen;
 }
 
-.price__inner{
+.price__inner {
   position: relative;
   padding-top: rem(80);
   padding-bottom: rem(82);
   max-width: rem(600);
   margin: auto;
-  @include mq("md"){
+  @include mq("md") {
     padding-top: rem(100);
     padding-bottom: rem(103);
   }
 }
 
-
-.prise__content{
+.prise__content {
   display: flex;
   flex-direction: column;
-  padding-top: rem(26);
+  padding-top: rem(28);
   column-gap: rem(93);
-  @include mq("md"){
+  @include mq("md") {
     flex-direction: row-reverse;
     padding-top: rem(38);
-  column-gap: rem(91);
-}
+    column-gap: rem(91);
+  }
 }
 
-.price__image-container{
-  @include mq("md"){
+.price__image-container {
+  @include mq("md") {
     width: 50%;
     aspect-ratio: 492 / 742;
   }
 }
-.price__image-container img{
+.price__image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.price__menu-list{
-  padding-top: rem(48);
-  @include mq("md"){
+.price__menu-list {
+  padding-top: rem(40);
+  @include mq("md") {
     width: 50%;
-    padding-top: rem(7);
+    padding-top: rem(0);
   }
 }
 
-.price__menu-group:not(:first-child){
-  padding-top: rem(47);
+.price__menu-group:not(:first-child) {
+  padding-top: rem(39);
 }
 
-.price__title{
-  padding-bottom: rem(4);
+.price__title {
+  padding-bottom: rem(0);
 }
-.price__menu-item{
+.price__menu-item {
   display: flex;
   align-items: end;
   padding-top: rem(8);
 }
 
-.price__menu-name{
+.price__menu-name {
   margin-right: auto;
   color: $deepGreen;
   font-weight: $regular;
   font-size: rem(14);
   line-height: 1.714;
-  font-family: "Noto Sans Jp",sans-serif;
-  @include mq("md"){
+  font-family: "Noto Sans Jp", sans-serif;
+  @include mq("md") {
     font-size: rem(16);
     line-height: 1.5;
   }
 }
 
-.price__menu-price{
+.price__menu-price {
   display: inline-block;
   padding-left: rem(8);
   color: $deepGreen;
   font-weight: $regular;
   font-size: rem(14);
   line-height: 1.714;
-  font-family: "Noto Sans Jp",sans-serif;
-  @include mq("md"){
+  font-family: "Noto Sans Jp", sans-serif;
+  @include mq("md") {
     font-size: rem(16);
     line-height: 1.5;
   }
 }
 
-.price__menu-price::before{
+.price__menu-price::before {
   content: "\0a5";
 }
 
-.price__button-wrap{
+.price__button-wrap {
   text-align: center;
-  padding-top: rem(40);
-    @include mq("md") {
-   padding-top: rem(80);
-    }
+  padding-top: rem(39);
+  @include mq("md") {
+    padding-top: rem(80);
+  }
 }
 
-.price__layer-fish{
-  @include mq("md"){
+.price__layer-fish {
+  @include mq("md") {
     position: absolute;
     bottom: rem(60);
-    left: calc(50% - min(50vw, rem(690)) + rem(20));
-    width: 30.34%;
-    max-width: rem(437);
+    left: calc(50% - min(50vw, rem(640)) + rem(20));
+    width: rem(437);
   }
 }

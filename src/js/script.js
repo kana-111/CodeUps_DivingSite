@@ -37,7 +37,6 @@ window.addEventListener("load", () => {
   loadingAnime();
 });
 
-
 // ハンバーガーメニュー
 $(function () {
   $(".js-hamburger,.js-drawer").click(function () {

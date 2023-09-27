@@ -1,46 +1,50 @@
 @use "global" as *;
 
-.blog{
-  @include mq("md"){
+.blog {
+  @include mq("md") {
     background-image: url(../images/top/blog-bg.jpg);
     background-size: 100% rem(500);
     background-repeat: no-repeat;
   }
 }
 
-.blog__inner{
+.blog__inner {
   padding-top: rem(80);
   max-width: rem(600);
   margin: auto;
   position: relative;
-  @include mq("md"){
+  @include mq("md") {
     padding-top: rem(100);
   }
 }
 
-.blog__cards{
+.blog__cards {
   display: grid;
   justify-content: center;
   margin-top: rem(24);
   grid-row-gap: rem(37);
   grid-column-gap: rem(40);
-  grid-template-columns: repeat(auto-fit, 1fr);
-  @include mq("md"){
+  grid-template-columns: 1fr;
+  padding-top: rem(3);
+  padding-left: rem(6);
+  padding-right: rem(6);
+  padding-bottom: rem(3);
+  @include mq("md") {
     grid-template-columns: repeat(auto-fit, min(100%, rem(333)));
     margin-top: rem(78);
+    padding: 0;
   }
 }
 
-.blog__button-wrap{
+.blog__button-wrap {
   text-align: center;
-  padding-top: rem(41);
-  @include mq("md"){
+  padding-top: rem(38);
+  @include mq("md") {
     padding-top: rem(80);
   }
 }
 
-
-.blog__layer-image{
+.blog__layer-image {
   position: absolute;
   top: rem(24);
   left: calc(50% - min(50vw, rem(640)) + rem(20));

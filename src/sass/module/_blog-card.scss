@@ -1,48 +1,47 @@
 @use "global" as *;
 
-.blog-card{
-  box-shadow: rem(2) rem(2) rem(10) rgba($color: $black, $alpha: .25);
+.blog-card {
+  box-shadow: rem(2) rem(2) rem(10) rgba($color: $black, $alpha: 0.25);
   background-color: $white;
 }
 
-.blog-card__inner{
-  padding: rem(18) rem(16) rem(21);
+.blog-card__inner {
+  padding: rem(17) rem(16) rem(21);
   opacity: 1;
   transition: opacity 0.3s;
-    @include mq("md") {
-   padding-top: rem(16);
-    }
+  @include mq("md") {
+    padding-top: rem(16);
+  }
 }
-.blog-card__inner:hover{
+.blog-card__inner:hover {
   opacity: 0.5;
 }
 
-.blog-card__image-container{
+.blog-card__image-container {
   width: 100%;
 }
-.blog-card__image-container img{
+.blog-card__image-container img {
   width: 100%;
 
   object-fit: cover;
   aspect-ratio: 301 / 201;
 }
 
-.blog-card__body{
+.blog-card__body {
   padding-top: rem(20);
 }
 
-.blog-card__time{
+.blog-card__time {
   color: $deepGreen;
   font-weight: $regular;
   font-size: rem(12);
 }
 
-.blog-card__title{
-  padding-top: rem(5);
-  padding-bottom: rem(5);
+.blog-card__title {
+  padding-top: rem(0);
+  padding-bottom: rem(0);
 }
 
-
-.blog-card__text{
-  padding-top: rem(18);
+.blog-card__text {
+  padding-top: rem(17);
 }

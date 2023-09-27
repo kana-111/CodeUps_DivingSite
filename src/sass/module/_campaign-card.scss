@@ -1,114 +1,109 @@
 @use "global" as *;
 
-.campaign-card{
-  box-shadow: rem(2) rem(2) rem(10) rgba($color: $black, $alpha: .25);
+.campaign-card {
+  box-shadow: rem(2) rem(2) rem(10) rgba($color: $black, $alpha: 0.25);
   background-color: $white;
   display: inline-block;
   height: 100%;
 }
 
-.campaign-card__inner{
+.campaign-card__inner {
   height: auto;
 }
-.campaign-card__image-container{
+.campaign-card__image-container {
   width: 100%;
 }
-.campaign-card__image{
+.campaign-card__image {
   width: 100%;
   aspect-ratio: 280/188;
   object-fit: cover;
-    @include mq("md") {
-   aspect-ratio: 334/223;
-    }
+  @include mq("md") {
+    aspect-ratio: 334/223;
+  }
 }
 
-.campaign-card__body{
+.campaign-card__body {
   padding: rem(16) rem(16) rem(16);
-  @include mq("md"){
+  @include mq("md") {
     padding: rem(24) rem(16) rem(29);
   }
 }
 
-.campaign-card__tag{
+.campaign-card__tag {
   display: inline-block;
-  padding: rem(7) rem(12) rem(4);
+  padding: rem(7) rem(11) rem(3);
   border: rem(1) solid $accentGreen;
   color: $accentGreen;
   font-weight: $bold;
   font-size: rem(12);
-  @include mq("md"){
+  @include mq("md") {
     padding: rem(10) rem(15) rem(4);
   }
 }
 
-
-.campaign-card__title{
-  padding-top: rem(11);
+.campaign-card__title {
+  padding-top: rem(4);
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-  padding-bottom: rem(9);
+  padding-bottom: rem(4);
 }
 
-// .campaign-card__title::after{
-// position: absolute;
-// bottom: rem(-9);
-// }
-
-.campaign-card__text{
+.campaign-card__text {
   padding-top: rem(15);
   color: $deepGreen;
   font-weight: $regular;
   line-height: 1;
   font-size: rem(14);
   text-align: center;
-    @include mq("md") {
-      padding-top: rem(22);
-      font-size: rem(16);
-    }
-
+  @include mq("md") {
+    padding-top: rem(22);
+    font-size: rem(16);
+  }
 }
 
-.campaign-card__price{
-  padding-top: rem(1);
-    @include mq("md") {
-   padding-top: rem(0);
-    }
+.campaign-card__price {
+  padding-top: rem(2);
+  @include mq("md") {
+    padding-top: rem(0);
+  }
 }
 
-.campaign-card__before-price, .campaign-card__after-price{
+.campaign-card__before-price,
+.campaign-card__after-price {
   display: inline-block;
   font-family: "Lato", "Noto Sans Jp", sans-serif;
 }
 
-.campaign-card__before-price{
+.campaign-card__before-price {
   position: relative;
   color: $deepGreen;
   font-weight: $bold;
   font-size: rem(20);
   display: inline-block;
   margin-left: rem(20);
-  @include mq("md"){
+  @include mq("md") {
     font-size: rem(24);
   }
 }
 
-.campaign-card__after-price{
+.campaign-card__after-price {
   padding-left: rem(14);
   color: $accentGreen;
   font-weight: $bold;
   font-size: rem(32);
-    @include mq("md") {
-   font-size: rem(40);
-   padding-left: rem(21);
-    }
+  @include mq("md") {
+    font-size: rem(40);
+    padding-left: rem(21);
+  }
 }
-.campaign-card__before-price::before, .campaign-card__after-price::before{
+.campaign-card__before-price::before,
+.campaign-card__after-price::before {
   content: "\0a5";
 }
 
-.campaign-card__before-price::after{
+.campaign-card__before-price::after {
   position: absolute;
   top: 50%;
   left: 0;

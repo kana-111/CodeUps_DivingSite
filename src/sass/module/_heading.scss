@@ -1,66 +1,66 @@
 @use "global" as *;
 
-.heading{
+.heading {
   text-align: center;
 }
 
-.heading__title-en{
+.heading__title-en {
   display: inline-block;
   color: $deepGreen;
   font-weight: $regular;
   font-size: rem(32);
   line-height: 1.25;
-  font-family: "Gotu",sans-serif;
-  @include mq("md"){
+  font-family: "Gotu", sans-serif;
+  @include mq("md") {
     font-size: rem(40);
     line-height: 1;
   }
 }
 
-.heading__title-jp{
+.heading__title-jp {
   display: block;
-  padding-top: rem(6);
+  padding-top: rem(4);
   color: $accentGreen;
   font-weight: $regular;
   font-size: rem(12);
   line-height: 1.5;
-  font-family: "Noto Sans Jp",sans-serif;
-  @include mq("md"){
+  font-family: "Noto Sans Jp", sans-serif;
+  @include mq("md") {
     padding-top: rem(8);
   }
 }
-.heading__title--green{
+.heading__title--green {
   color: $accentGreen;
 }
-.heading__title-en--revers{
+.heading__title-en--revers {
   color: $accentGreen;
   @include mq("md") {
-      color: $lightGreen;
-    }
+    color: $lightGreen;
+  }
 }
 
-.heading__title--green-revers{
-  @include mq("md"){
+.heading__title--green-revers {
+  @include mq("md") {
     color: $lightGreen;
   }
 }
 
 .heading__title-en--white,
-.heading__title-jp--white{
-  @include mq("md"){
+.heading__title-jp--white {
+  @include mq("md") {
     color: $white;
   }
 }
-.heading__title-en.heading__title-en--large{
+.heading__title-en.heading__title-en--large {
   font-size: rem(80);
   line-height: 0.7;
 }
 
-.heading__title-jp--large.heading__title-jp{
+.heading__title-jp--large.heading__title-jp {
   font-size: rem(10);
   padding-top: rem(3);
-    @include mq("md") {
-   font-size: rem(12);
-    }
-
+  @include mq("md") {
+    font-size: rem(12);
+    padding-top: 0;
+  }
 }

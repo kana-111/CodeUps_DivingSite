@@ -5,7 +5,7 @@
 }
 
 .voice-card__inner {
-  padding: rem(16) rem(16) rem(20);
+  padding: rem(16) rem(16) rem(21);
   @include mq("md") {
     padding: rem(24) rem(24) rem(21);
   }
@@ -63,7 +63,7 @@
 }
 
 .voice-card__title {
-  padding-top: rem(7);
+  padding-top: rem(3);
   @include mq("md") {
     padding-top: rem(12);
   }

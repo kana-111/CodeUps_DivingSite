@@ -1,37 +1,36 @@
 @use "global" as *;
 
-
-.layer-image{
+.layer-image {
   position: relative;
 }
-.layer-image__top{
+.layer-image__top {
   position: absolute;
   width: 37.1%;
 }
 
-.layer-image__top img{
+.layer-image__top img {
   width: 100%;
   object-fit: cover;
   aspect-ratio: 128/194;
-    @include mq("md") {
-      aspect-ratio: 400/606;
-    }
+  @include mq("md") {
+    aspect-ratio: 400/606;
+  }
 }
 
-.layer-image__bottom{
+.layer-image__bottom {
   padding-top: rem(25);
   padding-left: rem(63);
-    @include mq("md") {
-   padding-top: rem(80);
-   padding-left: rem(200);
-    }
+  @include mq("md") {
+    padding-top: rem(80);
+    padding-left: rem(200);
+  }
 }
 
-.layer-image__bottom img{
+.layer-image__bottom img {
   width: 100%;
   object-fit: cover;
   aspect-ratio: 281/186;
-    @include mq("md") {
-      aspect-ratio: 880/581;
-    }
+  @include mq("md") {
+    aspect-ratio: 880/581;
+  }
 }
