@@ -1,46 +1,47 @@
 jQuery(function ($) {});
 
 //loading
-const loading = document.querySelector(".js-loading");
-const body = document.querySelector(".js-body");
-window.addEventListener("load", () => {
-  function loadingAnime() {
-    body.classList.toggle("is-active");
-    gsap
-      .timeline()
-      .from(".js-loading-text", {
-        duration: 1.7,
-        autoAlpha: 0,
-      })
-      .from(".loading__image", {
-        duration: 1,
-        autoAlpha: 0,
-        y: 800,
-        stagger: {
-          each: 0.1,
-        },
-      })
-      .from(".js-loading-text--white", {
-        delay: 2,
-        duration: 1.7,
-        autoAlpha: 0,
-      })
-      .to(".js-loading-text--white,.js-loading", {
-        delay: 2,
-        duration: 1.5,
-        autoAlpha: 0,
-        onComplete: function () {
-          body.classList.toggle("is-active");
-        },
-      });
-  }
-  loadingAnime();
-});
+// const loading = document.querySelector(".js-loading");
+// const body = document.querySelector(".js-body");
+// window.addEventListener("load", () => {
+//   function loadingAnime() {
+//     body.classList.toggle("is-active");
+//     gsap
+//       .timeline()
+//       .from(".js-loading-text", {
+//         duration: 1.7,
+//         autoAlpha: 0,
+//       })
+//       .from(".loading__image", {
+//         duration: 1,
+//         autoAlpha: 0,
+//         y: 800,
+//         stagger: {
+//           each: 0.1,
+//         },
+//       })
+//       .from(".js-loading-text--white", {
+//         delay: 2,
+//         duration: 1.7,
+//         autoAlpha: 0,
+//       })
+//       .to(".js-loading-text--white,.js-loading", {
+//         delay: 2,
+//         duration: 1.5,
+//         autoAlpha: 0,
+//         onComplete: function () {
+//           body.classList.toggle("is-active");
+//         },
+//       });
+//   }
+//   loadingAnime();
+// });
 
 // ハンバーガーメニュー
 $(function () {
   $(".js-hamburger,.js-drawer").click(function () {
     $(".js-hamburger").toggleClass("is-active");
+    $(".body").toggleClass("is-active");
     $(".js-drawer").fadeToggle();
   });
 });

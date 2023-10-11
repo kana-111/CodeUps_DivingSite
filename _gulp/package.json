@@ -37,6 +37,7 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^7.1.0",
+    "pixrem": "^5.0.0",
     "postcss-preset-env": "^8.5.1",
     "sass": "^1.60.0"
   }

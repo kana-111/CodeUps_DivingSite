@@ -1,22 +1,20 @@
 @use "global" as *;
-
-.about__inner {
-  padding-top: rem(83);
-  padding-bottom: rem(72);
-  @include mq("md") {
-    padding-top: rem(143);
-    padding-bottom: rem(140);
-  }
+.about{
+  margin-top: rem(83);
+    @include mq("md") {
+   margin-top: rem(143);
+    }
 }
+
 .about__content {
-  margin-top: rem(27);
+  margin-top: rem(54);
   @include mq("md") {
     position: relative;
-    margin-top: rem(38);
+    margin-top: rem(120);
   }
 }
 .about__text-container {
-  padding-top: rem(40);
+  margin-top: rem(40);
   @include mq("md") {
     display: flex;
     position: absolute;
@@ -24,7 +22,7 @@
     right: 0;
     margin-right: rem(40);
     margin-left: rem(20);
-    padding-top: rem(0);
+    margin-top: rem(0);
   }
 }
 .about__text-wrap {
@@ -34,17 +32,17 @@
   }
 }
 .about_text {
-  padding-top: rem(19);
+  margin-top: rem(19);
   white-space: normal;
   @include mq("md") {
-    padding-top: rem(2);
+    margin-top: rem(2);
   }
 }
 .about__button-wrap {
   text-align: center;
-  padding-top: rem(47);
+  margin-top: rem(47);
   @include mq("md") {
-    padding-top: rem(37);
+    margin-top: rem(37);
   }
 }
 .about__layer-image {

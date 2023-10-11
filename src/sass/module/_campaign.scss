@@ -1,11 +1,14 @@
 @use "global" as *;
-
-.campaign__inner {
-  padding-top: rem(40);
+.campaign{
+margin-top: rem(40);
   @include mq("md") {
-    padding-top: rem(120);
+ margin-top: rem(120);
+  }
+}
+.campaign__inner {
+  @include mq("md") {
     width: 100%;
-    max-width: rem(1440);
+    // max-width: rem(1130);
     margin: 0 auto;
   }
 }
@@ -14,17 +17,17 @@
   width: 100%;
   padding: 0 rem(14);
   @include mq("md") {
-    padding: 0 rem(180);
+    // padding: 0 rem(180);
     position: relative;
   }
 }
 
-.campaign__slider-wrap {
-  padding-top: rem(28);
-  padding-bottom: rem(40);
+.campaign__slider .campaign__slider-wrap {
+  margin-top: rem(28);
+  padding-bottom: rem(10);
   @include mq("md") {
-    padding-top: rem(38);
-    padding-bottom: rem(80);
+    margin-top: rem(38);
+    padding-bottom: rem(10);
   }
 }
 
@@ -38,5 +41,9 @@
 }
 
 .campaign__button-wrap {
+  margin-top: rem(30);
   text-align: center;
+    @include mq("md") {
+   margin-top: rem(80);
+    }
 }

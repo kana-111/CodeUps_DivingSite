@@ -1,22 +1,22 @@
 @use "global" as *;
 
-.voice__inner {
+.voice{
+  margin-top: rem(83);
   position: relative;
-  padding-top: rem(83);
-  padding-bottom: rem(82);
+    @include mq("md") {
+   margin-top: rem(144);
+    }
+}
+.voice__inner {
   max-width: rem(600);
-  margin: auto;
-  @include mq("md") {
-    padding-top: rem(144);
-    padding-bottom: rem(143);
-  }
+  margin: 0 auto;
 }
 
 .voice__cards {
   display: grid;
   justify-content: center;
   margin-top: rem(42);
-  grid-row-gap: rem(40);
+  grid-row-gap: rem(38);
   grid-column-gap: rem(40);
   grid-template-columns: 1fr;
   @include mq("md") {
@@ -26,9 +26,9 @@
 }
 .voice__button-wrap {
   text-align: center;
-  padding-top: rem(40);
+  margin-top: rem(40);
   @include mq("md") {
-    padding-top: rem(79);
+    margin-top: rem(79);
   }
 }
 

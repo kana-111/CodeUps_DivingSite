@@ -15,12 +15,16 @@
 .drawer-menu__inner{
   width: 100%;
   height: inherit;
-  padding-top: rem(107);
+  margin-top: rem(80);
+  padding-top: rem(27);
   padding-right: rem(15);
   padding-left: rem(15);
+  padding-bottom: rem(100);
+  overflow: scroll;
 }
+
 .drawer-menu__item:not(:first-child){
-  padding-top: rem(50);
+  margin-top: rem(50);
 }
 .drawer-menu__link{
   font-weight: $regular;

@@ -27,21 +27,27 @@
   aspect-ratio: 301 / 201;
 }
 
-.blog-card__body {
-  padding-top: rem(20);
-}
-
 .blog-card__time {
   color: $deepGreen;
   font-weight: $regular;
   font-size: rem(12);
+  display: inline-block;
+  margin-top: rem(22);
 }
 
 .blog-card__title {
-  padding-top: rem(0);
-  padding-bottom: rem(0);
+position: relative;
+}
+.blog-card__title::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: rem(1);
+  background-color: $accentGreen;
+  bottom: 0;
+  left: 0;
 }
 
 .blog-card__text {
-  padding-top: rem(17);
+  margin-top: rem(18);
 }

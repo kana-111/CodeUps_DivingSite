@@ -19,8 +19,8 @@
   padding-right: rem(15);
   padding-left: rem(15);
   @include mq("md") {
-    padding-right: rem(40);
     padding-left: rem(40);
+    padding-right: calc(rem(40) - (2.79vw/2));
   }
 }
 .header__name {
@@ -45,9 +45,7 @@
 .header__item {
   height: inherit;
 }
-.header__item:not(:first-child) {
-  padding-left: 2.79vw;
-}
+
 .header__link {
   display: flex;
   flex-direction: column;
@@ -55,6 +53,8 @@
   align-items: center;
   height: inherit;
   position: relative;
+  padding-left: calc(2.79vw/2);
+  padding-right: calc(2.79vw/2);
 }
 .header__link::after {
   content: "";

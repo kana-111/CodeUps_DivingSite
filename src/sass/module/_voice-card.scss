@@ -5,7 +5,7 @@
 }
 
 .voice-card__inner {
-  padding: rem(16) rem(16) rem(21);
+  padding: rem(15) rem(16) rem(21);
   @include mq("md") {
     padding: rem(24) rem(24) rem(21);
   }
@@ -63,16 +63,26 @@
 }
 
 .voice-card__title {
-  padding-top: rem(3);
+  margin-top: rem(6);
+  position: relative;
   @include mq("md") {
-    padding-top: rem(12);
+    margin-top: rem(12);
   }
+}
+.voice-card__title::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: rem(1);
+  background-color: $accentGreen;
+  bottom: rem(1);
+  left: 0;
 }
 
 .voice-card__head-image {
   width: calc(52.39% - rem(12));
   margin-left: auto;
-  margin-top: rem(7);
+  margin-top: rem(10);
   max-width: rem(200);
   @include mq("md") {
     width: calc(100% - 58.47% - rem(16));
@@ -89,8 +99,8 @@
   }
 }
 .voice-card__text {
-  padding-top: rem(19);
+  margin-top: rem(18);
   @include mq("md") {
-    padding-top: rem(42);
+    margin-top: rem(42);
   }
 }
