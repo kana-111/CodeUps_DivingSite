@@ -6,7 +6,7 @@
   padding-top: rem(80);
   padding-bottom: rem(82);
     @include mq("md") {
-   margin-top: rem(143);
+   margin-top: rem(144);
    padding-top: rem(100);
    padding-bottom: rem(103);
     }
@@ -25,7 +25,7 @@
   column-gap: rem(93);
   @include mq("md") {
     flex-direction: row-reverse;
-    margin-top: rem(38);
+    margin-top: rem(40);
     column-gap: rem(91);
   }
 }
@@ -112,7 +112,7 @@ position: relative;
 .price__layer-fish {
   @include mq("md") {
     position: absolute;
-    bottom: rem(60);
+    bottom: rem(-42);
     left: calc(50% - min(50vw, rem(640)) + rem(20));
     width: rem(437);
   }

@@ -33,6 +33,9 @@
   font-size: rem(12);
   display: inline-block;
   margin-top: rem(22);
+    @include mq("md") {
+   margin-top: rem(25);
+    }
 }
 
 .blog-card__title {

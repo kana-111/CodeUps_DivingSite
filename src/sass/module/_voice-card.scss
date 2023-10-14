@@ -19,7 +19,7 @@
 }
 .voice-card__head-text-wrap {
   @include mq("md") {
-    padding-top: rem(24);
+    margin-top: rem(26);
   }
 }
 
@@ -77,6 +77,9 @@
   background-color: $accentGreen;
   bottom: rem(1);
   left: 0;
+    @include mq("md") {
+   bottom: rem(-2);
+    }
 }
 
 .voice-card__head-image {
@@ -101,6 +104,6 @@
 .voice-card__text {
   margin-top: rem(18);
   @include mq("md") {
-    margin-top: rem(42);
+    margin-top: rem(44);
   }
 }

@@ -53,14 +53,17 @@ position: relative;
     background-color: $accentGreen;
     bottom: rem(3);
     left: 0;
+      @include mq("md") {
+     bottom: 0;
+      }
 }
 
 .information__text-area {
   margin-top:rem(25);
   @include mq("md") {
     width: 50%;
-    margin-left: rem(48);
     margin-top: rem(58);
+    padding-left: rem(48);
   }
 }
 

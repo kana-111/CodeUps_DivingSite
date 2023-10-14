@@ -11,12 +11,9 @@
 }
 
 .contact__container {
-  display: flex;
-  flex-direction: column;
   @include mq("md") {
-    flex-direction: row;
-    width: 75%;
-    max-width: rem(1100);
+     width: calc(100% - rem(40));
+    max-width: rem(1080);
     margin-right: auto;
     margin-left: auto;
     padding-top: rem(80);
@@ -24,14 +21,24 @@
     box-shadow: rem(4) rem(4) rem(10) rgba($color: $black, $alpha: 0.25);
   }
 }
+.contact__inner{
+    display: flex;
+  flex-direction: column;
+  @include mq("md") {
+    flex-direction: row;
+    gap: rem(45);
+    padding-right: rem(32);
+    padding-left: rem(50);
+  }
+}
 
 .contact__shop-desc {
-  padding-right: rem(40);
   padding-left: rem(40);
+  padding-right: rem(40);
   @include mq("md") {
     width: 50%;
-    padding-left: rem(50);
-    padding-right: rem(19);
+    padding-right: rem(36);
+    padding-left: 0;
   }
 }
 
@@ -39,7 +46,7 @@
   border-bottom: $accentGreen rem(1) solid;
   padding-bottom: rem(6);
   @include mq("md") {
-    padding-bottom: rem(8);
+    padding-bottom: rem(7);
   }
 }
 
@@ -113,7 +120,6 @@
 .contact_contact-area {
   @include mq("md") {
     width: 50%;
-    margin-left: rem(61);
     border-left: rem(1) solid $accentGreen;
   }
 }
@@ -126,14 +132,14 @@
   text-align: center;
   @include mq("md") {
     text-shadow: none;
-    margin-top: rem(7);
+    margin-top: rem(9);
   }
 }
 
 .contact__heading{
   margin-top: rem(53);
     @include mq("md") {
-      margin-top: rem(34);
+      margin-top: rem(32);
     }
 }
 
@@ -141,7 +147,7 @@
   text-align: center;
   margin-top: rem(37);
   @include mq("md") {
-    margin-top:  rem(33);
+    margin-top:  rem(36);
   }
 }
 
@@ -152,7 +158,7 @@
   width: 29.06%;
   max-width: rem(301);
   @include mq("md") {
-    top: rem(100);
+    top: rem(-41);
     right: calc(50% - min(50vw, rem(690)) + rem(20));
   }
 }

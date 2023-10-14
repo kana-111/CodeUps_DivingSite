@@ -18,7 +18,7 @@
   aspect-ratio: 280/188;
   object-fit: cover;
   @include mq("md") {
-    aspect-ratio: 334/223;
+    aspect-ratio: 334/225;
   }
 }
 
@@ -67,7 +67,7 @@
   font-size: rem(14);
   text-align: center;
   @include mq("md") {
-    margin-top: rem(22);
+    margin-top: rem(19);
     font-size: rem(16);
   }
 }

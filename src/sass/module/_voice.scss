@@ -4,7 +4,7 @@
   margin-top: rem(83);
   position: relative;
     @include mq("md") {
-   margin-top: rem(144);
+   margin-top: rem(142);
     }
 }
 .voice__inner {
@@ -20,7 +20,8 @@
   grid-column-gap: rem(40);
   grid-template-columns: 1fr;
   @include mq("md") {
-    grid-template-columns: repeat(auto-fit, min(100%, rem(520)));
+    // grid-template-columns: repeat(auto-fit, min(100%, rem(520)));
+    grid-template-columns: repeat(2, 1fr);
     margin-top: rem(27);
   }
 }
@@ -34,7 +35,7 @@
 
 .voice__layer-fish {
   position: absolute;
-  top: rem(23);
+  top: rem(-120);
   left: calc(50% - min(50vw, rem(640)) + rem(20));
   transform: scaleX(-1);
   width: rem(301);
@@ -43,6 +44,6 @@
 .voice__layer-dragonfish {
   position: absolute;
   right: calc(50% - min(50vw, rem(560)) + rem(20));
-  bottom: rem(73);
+  bottom: rem(-72);
   width: rem(71);
 }
