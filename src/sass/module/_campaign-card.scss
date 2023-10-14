@@ -42,21 +42,21 @@
 }
 
 .campaign-card__title {
-  margin-top:  rem(7);
+  margin-top: rem(7);
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   // padding-bottom: rem(4);
   position: relative;
 }
-.campaign-card__title::after{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: rem(1);
-    background-color: $accentGreen;
-    bottom: rem(3);
-    left: 0;
+.campaign-card__title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: rem(1);
+  background-color: $accentGreen;
+  bottom: rem(3);
+  left: 0;
 }
 
 .campaign-card__text {

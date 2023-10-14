@@ -1,9 +1,9 @@
 @use "global" as *;
-.campaign{
-margin-top: rem(40);
+.campaign {
+  margin-top: rem(40);
   @include mq("md") {
- margin-top: rem(120);
- position: relative;
+    margin-top: rem(120);
+    position: relative;
   }
 }
 .campaign__inner {
@@ -13,22 +13,14 @@ margin-top: rem(40);
   }
 }
 
-
 .campaign__slider {
   margin-top: rem(28);
   padding-bottom: rem(10);
   margin-right: calc(50% - 50vw);
   @include mq("md") {
-      margin-top: rem(38);
+    margin-top: rem(38);
   }
 }
-// .campaign__slider .campaign__slider-wrap {
-//   margin-top: rem(28);
-//   padding-bottom: rem(10);
-//   @include mq("md") {
-
-//   }
-// }
 
 .campaign__slider-arrows {
   display: flex;
@@ -42,7 +34,7 @@ margin-top: rem(40);
 .campaign__button-wrap {
   margin-top: rem(30);
   text-align: center;
-    @include mq("md") {
-   margin-top: rem(70);
-    }
+  @include mq("md") {
+    margin-top: rem(70);
+  }
 }

@@ -1,9 +1,9 @@
 @use "global" as *;
-.about{
+.about {
   margin-top: rem(83);
-    @include mq("md") {
-   margin-top: rem(143);
-    }
+  @include mq("md") {
+    margin-top: rem(143);
+  }
 }
 
 .about__content {

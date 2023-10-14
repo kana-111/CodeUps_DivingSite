@@ -33,15 +33,15 @@
   font-size: rem(12);
   display: inline-block;
   margin-top: rem(22);
-    @include mq("md") {
-   margin-top: rem(25);
-    }
+  @include mq("md") {
+    margin-top: rem(25);
+  }
 }
 
 .blog-card__title {
-position: relative;
+  position: relative;
 }
-.blog-card__title::after{
+.blog-card__title::after {
   position: absolute;
   content: "";
   width: 100%;

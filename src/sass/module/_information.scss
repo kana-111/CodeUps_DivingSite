@@ -43,23 +43,23 @@
 }
 
 .information__title {
-position: relative;
+  position: relative;
 }
-.information__title::after{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: rem(1);
-    background-color: $accentGreen;
-    bottom: rem(3);
-    left: 0;
-      @include mq("md") {
-     bottom: 0;
-      }
+.information__title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: rem(1);
+  background-color: $accentGreen;
+  bottom: rem(3);
+  left: 0;
+  @include mq("md") {
+    bottom: 0;
+  }
 }
 
 .information__text-area {
-  margin-top:rem(25);
+  margin-top: rem(25);
   @include mq("md") {
     width: 50%;
     margin-top: rem(58);
