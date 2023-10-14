@@ -6,10 +6,10 @@
   height: rem(48);
   border: rem(1) solid $accentGreen;
   border-radius: 100vh;
-    @include mq("md") {
-   width: rem(80);
-   height: rem(80);
-    }
+  @include mq("md") {
+    width: rem(80);
+    height: rem(80);
+  }
 }
 
 .arrow::before {
@@ -23,9 +23,8 @@
   background-color: $accentGreen;
   content: "";
   @include mq("md") {
-        width: rem(40);
-   
-    }
+    width: rem(40);
+  }
 }
 
 .arrow::after {
@@ -39,16 +38,15 @@
   transform: rotate(-30deg) translateY(-50%);
   left: rem(10);
   @include mq("md") {
-      width: rem(10);
-      left: rem(20);
-   
-    }
+    width: rem(10);
+    left: rem(20);
+  }
 }
 
 .arrow.arrow--revers {
-    transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
-.arrow.arrow--top{
- transform: rotate(90deg) scaleY(-1);
+.arrow.arrow--top {
+  transform: rotate(90deg) scaleY(-1);
 }

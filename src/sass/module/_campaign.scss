@@ -1,15 +1,14 @@
 @use "global" as *;
 .campaign {
   margin-top: rem(40);
+  overflow: hidden;
   @include mq("md") {
     margin-top: rem(120);
-    position: relative;
   }
 }
 .campaign__inner {
   @include mq("md") {
-    width: 100%;
-    margin: 0 auto;
+    position: relative;
   }
 }
 
@@ -22,15 +21,23 @@
   }
 }
 
-.campaign__slider-arrows {
-  display: flex;
-  position: absolute;
-  top: rem(23);
-  left: 79.2%;
-  transform: translateX(-50%);
-  gap: rem(100);
+.campaign .campaign__slider-prev,
+.campaign .campaign__slider-next {
+  @include mq("md") {
+    position: absolute;
+    top: rem(23);
+  }
 }
-
+.campaign .campaign__slider-prev {
+  @include mq("md") {
+    left: 76.5%;
+  }
+}
+.campaign .campaign__slider-next {
+  @include mq("md") {
+    left: 90.6%;
+  }
+}
 .campaign__button-wrap {
   margin-top: rem(30);
   text-align: center;
