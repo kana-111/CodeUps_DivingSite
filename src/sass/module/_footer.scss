@@ -19,10 +19,7 @@ padding-bottom: rem(56);
   @include mq("md"){
   }
 }
-.footer__content{
-  padding-right: rem(15);
-  padding-left: rem(15);
-}
+
 .footer__heading{
   display: flex;
   flex-direction: column;
