@@ -72,6 +72,7 @@
   transform: scale(1, 1); /*X方向にスケール拡大*/
 }
 .header__link-en {
+  font-family: $second-font-family;
   display: inline-block;
   color: $white;
   font-size: rem(18);

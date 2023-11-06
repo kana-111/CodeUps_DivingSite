@@ -3,13 +3,17 @@
 .contact {
   position: relative;
   filter: drop-shadow(0 rem(4) rem(4) rgba($color: $black, $alpha: 0.25));
-  margin-top: rem(80);
   @include mq("md") {
     filter: none;
-    margin-top: rem(140);
   }
 }
 
+.contact__layout{
+  margin-top: rem(80);
+    @include mq("md") {
+    margin-top: rem(140);
+    }
+  }
 .contact__container {
   @include mq("md") {
     width: calc(100% - rem(40));

@@ -22,9 +22,7 @@
 
 .title__text.title__text--campaign {
   width: 100%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  flex-grow: 1;
 }
 .title__text.title__text--large-info {
   font-size: rem(20);

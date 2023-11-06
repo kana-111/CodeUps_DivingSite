@@ -1,15 +1,20 @@
 @use "global" as *;
 
 .blog {
-  margin-top: rem(81);
   position: relative;
   @include mq("md") {
     background-image: url(../images/top/blog-bg.jpg);
     background-size: 100% rem(500);
     background-repeat: no-repeat;
     padding-top: rem(100);
-    margin-top: 0;
   }
+}
+
+.blog__layout{
+    margin-top: rem(81);
+      @include mq("md") {
+     margin-top: 0;
+      }
 }
 
 .blog__inner {

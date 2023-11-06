@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
     gsap
       .timeline()
       .from(".js-loading-text", {
-        duration: 1.7,
+        duration: 0.5,
         autoAlpha: 0,
       })
       .from(".loading__image", {
@@ -21,13 +21,13 @@ window.addEventListener("load", () => {
         },
       })
       .from(".js-loading-text--white", {
-        delay: 2,
-        duration: 1.7,
+        delay: 0.5,
+        duration: 1,
         autoAlpha: 0,
       })
       .to(".js-loading-text--white,.js-loading", {
-        delay: 2,
-        duration: 1.5,
+        delay: 1,
+        duration: 0.5,
         autoAlpha: 0,
         onComplete: function () {
           body.classList.toggle("is-active");
@@ -68,7 +68,7 @@ const campaign__slider = new Swiper(".campaign__slider", {
   slidesPerView: "auto",
   spaceBetween: 24,
   loop: true,
-  autoHeight: true,
+  autoHeight: false,
   freeMode: true,
   breakpoints: {
     767: {

@@ -1,5 +1,5 @@
 @use "global" as *;
-.about {
+.about__layout{
   margin-top: rem(83);
   @include mq("md") {
     margin-top: rem(143);
@@ -30,6 +30,9 @@
     max-width: rem(400);
     margin-left: rem(40);
   }
+}
+.about__title{
+  font-family: $second-font-family;
 }
 .about_text {
   margin-top: rem(19);

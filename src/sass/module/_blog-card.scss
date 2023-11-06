@@ -27,19 +27,22 @@
   aspect-ratio: 301 / 201;
 }
 
+.blog-card__body{
+    margin-top: rem(22);
+  @include mq("md") {
+    margin-top: rem(25);
+  }
+}
 .blog-card__time {
   color: $deepGreen;
   font-weight: $regular;
   font-size: rem(12);
   display: inline-block;
-  margin-top: rem(22);
-  @include mq("md") {
-    margin-top: rem(25);
-  }
 }
 
 .blog-card__title {
   position: relative;
+  padding-bottom: rem(8);
 }
 .blog-card__title::after {
   position: absolute;
