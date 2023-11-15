@@ -3,13 +3,6 @@
 .voice {
   position: relative;
 }
-
-.voice__layout{
-    margin-top: rem(83);
-    @include mq("md") {
-    margin-top: rem(142);
-  }
-}
 .voice__inner {
   max-width: rem(600);
   margin: 0 auto;
@@ -18,35 +11,35 @@
 .voice__cards {
   display: grid;
   justify-content: center;
-  margin-top: rem(42);
-  grid-row-gap: rem(38);
+  margin-top: rem(44);
+  grid-row-gap: rem(40);
   grid-column-gap: rem(40);
   grid-template-columns: 1fr;
   @include mq("md") {
     // grid-template-columns: repeat(auto-fit, min(100%, rem(520)));
     grid-template-columns: repeat(2, 1fr);
-    margin-top: rem(27);
+    margin-top: rem(30);
   }
 }
 .voice__button-wrap {
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(41);
   @include mq("md") {
-    margin-top: rem(79);
+    margin-top: rem(80);
   }
 }
 
 .voice__layer-fish {
   position: absolute;
-  top: rem(-120);
-  left: calc(50% - min(50vw, rem(640)) + rem(20));
+  top: rem(-119);
+  left: calc(50% - min(48vw, rem(620)));
   transform: scaleX(-1);
   width: rem(301);
 }
 
 .voice__layer-dragonfish {
   position: absolute;
-  right: calc(50% - min(50vw, rem(560)) + rem(20));
-  bottom: rem(-72);
+  right: calc(50% - min(48vw, rem(540)));
+  bottom: rem(-70);
   width: rem(71);
 }

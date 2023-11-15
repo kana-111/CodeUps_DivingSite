@@ -29,44 +29,34 @@ display: flex;
 flex-direction: column;
 height: 100%;
   @include mq("md") {
-    padding: rem(24) rem(16) rem(29);
+    padding: rem(24) rem(16) rem(31);
   }
 }
 
 .campaign-card__tag {
   display: inline-block;
-  padding: rem(5) rem(11) rem(3);
+  padding: rem(6) rem(11) rem(4);
   border: rem(1) solid $accentGreen;
   color: $accentGreen;
   font-weight: $bold;
   font-size: rem(12);
   margin-right: auto;
   @include mq("md") {
-    padding: rem(10) rem(15) rem(4);
+    padding: rem(7) rem(15) rem(7);
   }
 }
 
 .campaign-card__title {
-  margin-top: rem(7);
-  // text-overflow: ellipsis;
-  // overflow: hidden;
-  // white-space: nowrap;
-  // padding-bottom: rem(4);
-  position: relative;
+  margin-top: rem(4);
   flex-grow: 1;
   color: $deepGreen;
   font-weight: $normal;
   font-size: rem(16);
+  border-bottom: rem(1) solid $accentGreen;
   padding-bottom: rem(8);
-}
-.campaign-card__title::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: rem(1);
-  background-color: $accentGreen;
-  bottom: rem(3);
-  left: 0;
+    @include mq("md") {
+    padding-bottom: rem(7);
+    }
 }
 
 .campaign-card__text {
@@ -83,9 +73,9 @@ height: 100%;
 }
 
 .campaign-card__price {
-  padding-top: rem(2);
+  margin-top: rem(5);
   @include mq("md") {
-    padding-top: rem(0);
+    margin-top: rem(1);
   }
 }
 
@@ -114,7 +104,7 @@ height: 100%;
   font-size: rem(32);
   @include mq("md") {
     font-size: rem(40);
-    margin-left: rem(21);
+    margin-left: rem(22);
   }
 }
 

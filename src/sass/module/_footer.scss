@@ -10,13 +10,6 @@
   }
 }
 
-.footer__layout{
-    margin-top: rem(102);
-      @include mq("md") {
-        margin-top: rem(160);
-      }
-}
-
 .footer__inner {
   width: 100%;
   max-width: rem(1100);

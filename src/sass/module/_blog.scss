@@ -3,19 +3,24 @@
 .blog {
   position: relative;
   @include mq("md") {
-    background-image: url(../images/top/blog-bg.jpg);
-    background-size: 100% rem(500);
-    background-repeat: no-repeat;
     padding-top: rem(100);
   }
 }
-
-.blog__layout{
-    margin-top: rem(81);
-      @include mq("md") {
-     margin-top: 0;
-      }
+.blog::before{
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: rem(500);
+    background-image: url(../images/top/blog-bg.jpg);
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+   z-index: -1;
+    }
 }
+
 
 .blog__inner {
   max-width: rem(600);
@@ -34,8 +39,8 @@
   padding-right: rem(6);
   padding-bottom: rem(3);
   @include mq("md") {
-    grid-template-columns: repeat(auto-fit, min(100%, rem(333)));
-    margin-top: rem(78);
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: rem(80);
     padding: 0;
   }
 }
@@ -44,13 +49,13 @@
   text-align: center;
   margin-top: rem(37);
   @include mq("md") {
-    margin-top: rem(80);
+    margin-top: rem(83);
   }
 }
 
 .blog__layer-image {
   position: absolute;
   top: rem(24);
-  left: calc(50% - min(50vw, rem(640)) + rem(20));
+  left: calc(50% - min(48vw, rem(620)));
   width: rem(437);
 }

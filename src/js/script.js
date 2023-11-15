@@ -73,7 +73,7 @@ const campaign__slider = new Swiper(".campaign__slider", {
   breakpoints: {
     767: {
       spaceBetween: 40,
-    },
+    }
   },
   navigation: {
     nextEl: ".campaign__slider-next",

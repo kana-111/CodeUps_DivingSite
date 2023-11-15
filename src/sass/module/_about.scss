@@ -1,10 +1,4 @@
 @use "global" as *;
-.about__layout{
-  margin-top: rem(83);
-  @include mq("md") {
-    margin-top: rem(143);
-  }
-}
 
 .about__content {
   margin-top: rem(54);
@@ -20,7 +14,7 @@
     position: absolute;
     top: 20.7%;
     right: 0;
-    margin-right: rem(40);
+    margin-right: rem(41);
     margin-left: rem(20);
     margin-top: rem(0);
   }
@@ -35,22 +29,22 @@
   font-family: $second-font-family;
 }
 .about_text {
-  margin-top: rem(19);
+  margin-top: rem(16);
   white-space: normal;
   @include mq("md") {
-    margin-top: rem(2);
+ margin-top: 0;
   }
 }
 .about__button-wrap {
   text-align: center;
-  margin-top: rem(47);
+  margin-top: rem(50);
   @include mq("md") {
-    margin-top: rem(37);
+    margin-top: rem(40);
   }
 }
 .about__layer-image {
   position: absolute;
-  right: calc(50% - min(50vw, rem(657)) + rem(20));
+  right: calc(50% - min(48vw, rem(637)));
   bottom: rem(-90);
   width: rem(194);
 }

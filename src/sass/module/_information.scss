@@ -1,21 +1,14 @@
 @use "global" as *;
 .information {
   background-color: $lightGreen;
-
   padding-top: rem(80);
   padding-bottom: rem(82);
   @include mq("md") {
-
-    padding-top: rem(100);
+    padding-top: rem(99);
     padding-bottom: rem(100);
   }
 }
-.information__layout{
-    margin-top: rem(72);
-      @include mq("md") {
-         margin-top: rem(140);
-      }
-}
+
 .information__inner {
   max-width: rem(600);
   margin: auto;
@@ -29,7 +22,7 @@
   margin-top: rem(28);
   @include mq("md") {
     flex-direction: row;
-    margin-top: rem(38);
+    margin-top: rem(40);
   }
 }
 
@@ -48,26 +41,18 @@
 }
 
 .information__title {
-  position: relative;
-}
-.information__title::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: rem(1);
-  background-color: $accentGreen;
-  bottom: rem(3);
-  left: 0;
+  padding-bottom: 0;
+  border-bottom: rem(1) solid $accentGreen;
   @include mq("md") {
-    bottom: 0;
-  }
+      padding-bottom: rem(2);
+    }
 }
 
 .information__text-area {
-  margin-top: rem(25);
+  margin-top: rem(22);
   @include mq("md") {
     width: 50%;
-    margin-top: rem(58);
+    margin-top: rem(55);
     padding-left: rem(48);
   }
 }
@@ -75,11 +60,11 @@
 .information__text {
   margin-top: rem(7);
   @include mq("md") {
-    margin-top: rem(10);
+    margin-top: rem(7);
   }
 }
 
 .information__button-wrap {
   text-align: center;
-  margin-top: rem(37);
+  margin-top: rem(40);
 }

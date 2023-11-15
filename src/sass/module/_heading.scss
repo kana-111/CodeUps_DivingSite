@@ -16,6 +16,9 @@
     line-height: 1;
   }
 }
+.heading__title-en::first-letter{
+  color: $accentGreen;
+}
 
 .heading__title-jp {
   display: block;
@@ -26,17 +29,21 @@
   line-height: 1.5;
   font-family: "Noto Sans Jp", sans-serif;
   @include mq("md") {
-    margin-top: rem(7);
+    margin-top: rem(8);
   }
 }
-.heading__title--green {
-  color: $accentGreen;
-}
-.heading__title-en--revers {
-  color: $accentGreen;
+
+.heading__title-en.heading__title-en--revers {
+  color: $deepGreen;
   @include mq("md") {
-    color: $lightGreen;
+    color: $white;
   }
+}
+.heading__title-en.heading__title-en--revers::first-letter{
+  color: $deepGreen;
+    @include mq("md") {
+   color: $lightGreen;
+    }
 }
 
 .heading__title--green-revers {
@@ -61,6 +68,6 @@
   margin-top: rem(3);
   @include mq("md") {
     font-size: rem(12);
-    margin-top: 0;
+    margin-top: rem(4);
   }
 }

@@ -6,7 +6,7 @@
 }
 
 .blog-card__inner {
-  padding: rem(17) rem(16) rem(21);
+  padding: rem(16) rem(16) rem(24);
   opacity: 1;
   transition: opacity 0.3s;
   @include mq("md") {
@@ -28,9 +28,9 @@
 }
 
 .blog-card__body{
-    margin-top: rem(22);
+    margin-top: rem(18);
   @include mq("md") {
-    margin-top: rem(25);
+    margin-top: rem(17);
   }
 }
 .blog-card__time {
@@ -41,19 +41,13 @@
 }
 
 .blog-card__title {
-  position: relative;
-  padding-bottom: rem(8);
-}
-.blog-card__title::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: rem(1);
-  background-color: $accentGreen;
-  bottom: 0;
-  left: 0;
+  padding-bottom: rem(4);
+  border-bottom: rem(1) solid $accentGreen;
+  @include mq("md") {
+ padding-bottom: rem(5);
+  }
 }
 
 .blog-card__text {
-  margin-top: rem(18);
+  margin-top: rem(15);
 }

@@ -14,7 +14,7 @@
 // }
 
 .title__text {
-  display: inline-block;
+  // display: inline-block;
   color: $deepGreen;
   font-weight: $normal;
   font-size: rem(16);
@@ -27,6 +27,7 @@
 .title__text.title__text--large-info {
   font-size: rem(20);
   font-weight: $bold;
+  display: block;
   @include mq("md") {
     font-size: rem(24);
   }
