@@ -13,18 +13,18 @@
 //   left: 0;
 // }
 
-.title__text {
+.title-text {
   // display: inline-block;
   color: $deepGreen;
   font-weight: $normal;
   font-size: rem(16);
 }
 
-.title__text.title__text--campaign {
+.title-text.title-text--campaign {
   width: 100%;
   flex-grow: 1;
 }
-.title__text.title__text--large-info {
+.title-text.title-text--large-info {
   font-size: rem(20);
   font-weight: $bold;
   display: block;
@@ -33,7 +33,7 @@
   }
 }
 
-.title__text.title__text--large-voice {
+.title-text.title-text--large-voice {
   line-height: 1.5;
   @include mq("md") {
     font-size: rem(24);

@@ -54,20 +54,20 @@ transform: translate(-50%,-50%);
   width: 100%;
 }
 
-.loading__image-left,
-.loading__image-right {
+.loading__image--left,
+.loading__image--right {
   width: 50%;
   height: inherit;
 }
-.loading__image-left img,
-.loading__image-left picture {
+.loading__image--left img,
+.loading__image--left picture {
   height: inherit;
   object-fit: cover;
   object-position: right 50%;
 }
 
-.loading__image-right img,
-.loading__image-right picture {
+.loading__image--right img,
+.loading__image--right picture {
   height: inherit;
   object-fit: cover;
   object-position: left 50%;
