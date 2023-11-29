@@ -33,20 +33,20 @@
   }
 }
 
-.heading__title-en.heading__title-en--revers {
+.heading__title-en.heading__title-en--reverse {
   color: $deepGreen;
   @include mq("md") {
     color: $white;
   }
 }
-.heading__title-en.heading__title-en--revers::first-letter{
+.heading__title-en.heading__title-en--reverse::first-letter{
   color: $deepGreen;
     @include mq("md") {
    color: $lightGreen;
     }
 }
 
-.heading__title--green-revers {
+.heading__title--green-reverse {
   @include mq("md") {
     color: $lightGreen;
   }
