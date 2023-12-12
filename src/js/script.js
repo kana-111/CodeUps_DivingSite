@@ -20,12 +20,12 @@ window.addEventListener("load", () => {
           each: 0.1,
         },
       })
-      .from(".js-loading-text--white", {
+      .from(".js-loading-text-white", {
         delay: 0.5,
         duration: 1,
         autoAlpha: 0,
       })
-      .to(".js-loading-text--white,.js-loading", {
+      .to(".js-loading-text-white,.js-loading", {
         delay: 1,
         duration: 0.5,
         autoAlpha: 0,
@@ -47,7 +47,7 @@ $(function () {
 });
 
 //MVスワイパー
-let mv__slider = new Swiper(".mv__slider", {
+let mv__slider = new Swiper(".js-mv-slider", {
   loop: true,
   effect: "fade",
   autoplay: {
@@ -61,7 +61,7 @@ let mv__slider = new Swiper(".mv__slider", {
 });
 
 //Campaignスワイパー
-const campaign__slider = new Swiper(".campaign__slider", {
+const campaign__slider = new Swiper(".js-campaign-slider", {
   allowTouchMove: true,
   allowSlideNext: true,
   allowSlidePrev: true,

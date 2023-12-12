@@ -28,7 +28,7 @@
 .about__title{
   font-family: $second-font-family;
 }
-.about_text {
+.about__text {
   margin-top: rem(16);
   white-space: normal;
   @include mq("md") {

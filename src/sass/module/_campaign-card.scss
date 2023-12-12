@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.campaign__slider .campaign-card {
+.campaign-card {
   box-shadow: rem(2) rem(2) rem(10) rgba($color: $black, $alpha: 0.25);
   background-color: $white;
   height: auto;
