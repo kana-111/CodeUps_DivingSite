@@ -1,0 +1,44 @@
+@use "global" as *;
+.breadcrumb {
+
+}
+
+.breadcrumb__inner {
+
+}
+.breadcrumb__inner a{
+    text-transform: uppercase;
+    color: $deepGreen;
+    font-size: rem(14);
+}
+.breadcrumb__inner a:not(:first-child){
+    margin-left: rem(8);
+}
+
+.breadcrumb__arrow{
+    display: inline-block;
+    width: rem(4);
+    height: rem(8);
+    position: relative;
+    margin-left: rem(8);
+}
+
+.breadcrumb__arrow::before,
+.breadcrumb__arrow::after{
+    content: "";
+    position: absolute;
+    width: rem(8);
+    height: rem(1);
+    background-color: $deepGreen;
+    border-radius: 50%;
+}
+
+.breadcrumb__arrow::before{
+    transform: rotate(45deg);
+    top: -2%;
+}
+
+.breadcrumb__arrow::after{
+    transform: rotate(-45deg);
+    top: 51%;
+}

@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.pagination__inner{
+display: flex;
+justify-content: center;
+gap: rem(40);
+}
+.pagination__pages{
+    display: flex;
+    gap: rem(12);
+}
+
+.pagination__button {
+    display: flex;
+    width: rem(38);
+    height: rem(38);
+    border: rem(1) solid $accentGreen;
+    justify-content: center;
+    align-items: center;
+    font-size: rem(16);
+    font-weight: $bold;
+    color: $accentGreen;
+    font-family: "Lato",sans-serif;
+    background-color: $white;
+    transition: background-color 0.3s;
+}
+.pagination__button.u-desktop{
+    display: none;
+      @include mq("md") {
+     display: flex;
+      }
+}
+.pagination__button.pagination__button--prev,
+.pagination__button.pagination__button--next {
+position: relative;
+}
+
+.pagination__button.pagination__button--prev::before,
+.pagination__button.pagination__button--next::before {
+    position: absolute;
+    content: "";
+    width: rem(13);
+    height: rem(13);
+    border-top: rem(1) solid $accentGreen;
+    border-right: rem(1) solid $accentGreen;
+}
+.pagination__button.pagination__button--prev::before{
+    transform: rotate(-135deg);
+}
+.pagination__button.pagination__button--next::before{
+    transform: rotate(45deg);
+}
+
+.pagination__button:hover.pagination__button--prev::before,
+.pagination__button:hover.pagination__button--next::before {
+    border-color: $white;
+}
+
+.pagination__button:hover,
+.pagination__button.pagination__button--current {
+    background-color: $accentGreen;
+    color: $white;
+}
+

@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.page-mv {
+  width: 100%;
+  height: rem(460);
+  position: relative;
+    @include mq("md") {
+   height: rem(548);
+    }
+}
+
+.page-mv::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(64, 145, 150, 0.3) 50%,rgba(64, 145, 150, 0.3) 0%);
+}
+
+.page-mv--campaign{
+  background-image: url(../images/campaign/campaign-mv.jpg);
+  background-size: cover;
+  background-position: center;
+    @include mq("md") {
+      background-image: url(../images/campaign/campaign-mv-pc.jpg);
+    }
+}

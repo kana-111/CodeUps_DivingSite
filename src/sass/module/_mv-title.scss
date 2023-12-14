@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.mv-title{
+    position: absolute;
+    font-family: "lato",sans-serif;
+    font-size: rem(40);
+    font-weight: $regular;
+    color: $white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  @include mq("md") {
+ font-size: rem(80);
+ line-height: 1.25;
+  }
+}

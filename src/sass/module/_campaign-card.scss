@@ -123,3 +123,36 @@ height: 100%;
   background-color: $red;
   content: "";
 }
+.campaign-card__disc-wrap{
+  margin-top: rem(24);
+}
+
+.campaign-card__disc{
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+  color: $deepGreen;
+}
+
+.campaign-card__cta-wrap{
+  margin-top: rem(24);
+  text-align: center;
+  color: $accentGreen;
+}
+
+.campaign-card__date{
+font-size: rem(16);
+font-family: 'Lato',sans-serif;
+font-weight: $bold;
+line-height: calc(18 / 16);
+}
+
+.campaign-card__cta-text {
+margin-top: rem(7);
+font-size: rem(14);
+font-weight: $regular;
+}
+
+.campaign-card__button-wrap {
+margin-top: rem(16);
+}
+
