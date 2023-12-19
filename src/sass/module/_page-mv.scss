@@ -4,6 +4,8 @@
   width: 100%;
   height: rem(460);
   position: relative;
+  background-size: cover;
+  background-position: center;
     @include mq("md") {
    height: rem(548);
     }
@@ -21,9 +23,21 @@
 
 .page-mv--campaign{
   background-image: url(../images/campaign/campaign-mv.jpg);
-  background-size: cover;
-  background-position: center;
     @include mq("md") {
       background-image: url(../images/campaign/campaign-mv-pc.jpg);
+    }
+}
+
+.page-mv--about{
+  background-image: url(../images/about/about-mv.jpg);
+    @include mq("md") {
+      background-image: url(../images/about/about-mv-pc.jpg);
+    }
+}
+
+.page-mv--information{
+  background-image: url(../images/information/information-mv.jpg);
+    @include mq("md") {
+      background-image: url(../images/information/information-mv-pc.jpg);
     }
 }

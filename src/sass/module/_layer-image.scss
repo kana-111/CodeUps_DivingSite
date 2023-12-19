@@ -12,6 +12,13 @@
     }
 }
 
+.layer-image__top.layer-image__top--about{
+display: none;
+  @include mq("md") {
+ display: block;
+  }
+}
+
 .layer-image__top img {
   width: 100%;
   object-fit: cover;
@@ -29,6 +36,13 @@
   // margin-left: rem(63);
   @include mq("md") {
     // margin-left: rem(200);
+  }
+}
+
+.layer-image__bottom.layer-image__bottom--about{
+  width: 100%;
+  @include mq("md") {
+    width: 81.44%;
   }
 }
 

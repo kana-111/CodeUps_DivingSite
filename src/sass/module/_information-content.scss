@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.information-content{
+    position: relative;
+}
+
+.information-content__layer-fish{
+    position: absolute;
+    top: rem(-80);
+    left: calc(50% - min(48vw, rem(620)));
+    transform: scaleX(-1);
+    width: rem(120);
+    z-index: -1;
+    @include mq("md") {
+      top: rem(-150);
+      width: rem(301);
+    }
+}

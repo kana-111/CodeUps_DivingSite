@@ -7,6 +7,12 @@
     margin-top: rem(120);
   }
 }
+.about__content.about__content--about{
+  position: relative;
+    @include mq("md") {
+   position: static;
+    }
+}
 .about__text-container {
   margin-top: rem(40);
   @include mq("md") {
@@ -19,6 +25,8 @@
     margin-top: rem(0);
   }
 }
+
+
 .about__text-wrap {
   @include mq("md") {
     max-width: rem(400);
@@ -27,6 +35,16 @@
 }
 .about__title{
   font-family: $second-font-family;
+}
+
+.about__title.about__title--about{
+  position: absolute;
+  top: rem(24);
+  left: rem(24);
+  color: $white;
+    @include mq("md") {
+   position: static;
+    }
 }
 .about__text {
   margin-top: rem(16);
