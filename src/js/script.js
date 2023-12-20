@@ -160,6 +160,25 @@ $(".page-top").click(function () {
   return false; //リンク自体の無効化
 });
 
+//about-gallery
+jQuery(function ($) {
+  $(".js-modal-open").each(function () {
+      $(this).on("click", function (e) {
+          e.preventDefault();
+          var target = $(this).data("target");
+          var modal  = document.getElementById(target);
+          $(modal).addClass("is-active");
+          $(modal).fadeIn();
+          $("html,body").css("overflow", "hidden");
+      });
+  });
+  $(".js-modal-close").on("click", function () {
+    $(".modal").removeClass("is-active");
+      $(".js-modal").fadeOut();
+      $("html,body").css("overflow", "initial");
+  });
+});
+
 //tab切り替え
 //任意のタブにURLからリンクするための設定
 function GethashID(hashIDName) {
