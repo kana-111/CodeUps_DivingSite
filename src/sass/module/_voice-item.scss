@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.voice-item__content-wrap{
+    margin-top: rem(16);
+}
+
+.voice-item img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 294 / 218;
+    object-fit: cover;
+}
+
+.voice-item__age{
+font-size: rem(12);
+font-family: "Noto Sans Jp",sans-serif;
+color: $deepGreen;
+}
+
+.voice-item__title{
+    margin-top: rem(8);
+    font-size: rem(24);
+    color: $deepGreen;
+    font-weight: $normal;
+}

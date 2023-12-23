@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.blog-side{
+    width: 100%;
+    padding-right: rem(25);
+    padding-left: rem(25);
+      @include mq("md") {
+       width: rem(294);
+       padding-right: 0;
+       padding-left: 0;
+      }
+}
+
+.blog-side__unit:not(:first-child){
+    margin-top: rem(80);
+
+}
+
+.blog-side__items{
+    margin-top: rem(24);
+}

@@ -59,6 +59,10 @@ height: 100%;
     }
 }
 
+.campaign-card__title--center{
+  text-align: center;
+}
+
 .campaign-card__text {
   margin-top: rem(12);
   color: $deepGreen;
@@ -79,6 +83,10 @@ height: 100%;
   }
 }
 
+.campaign-card__price.campaign-card__price--center{
+  text-align: center;
+}
+
 .campaign-card__before-price,
 .campaign-card__after-price {
   display: inline-block;
@@ -97,6 +105,11 @@ height: 100%;
   }
 }
 
+.campaign-card__before-price.campaign-card__before-price--small{
+  font-size: rem(20);
+  margin-left: rem(0);
+}
+
 .campaign-card__after-price {
   margin-left: rem(14);
   color: $accentGreen;
@@ -106,6 +119,11 @@ height: 100%;
     font-size: rem(40);
     margin-left: rem(22);
   }
+}
+
+.campaign-card__after-price.campaign-card__after-price--small{
+  font-size: rem(32);
+  margin-left: rem(16);
 }
 
 .campaign-card__before-price::before,

@@ -40,7 +40,7 @@
 .about__title.about__title--about{
   position: absolute;
   top: rem(24);
-  left: rem(24);
+  left: calc(50% - min(44vw, 15.75rem));
   color: $white;
     @include mq("md") {
    position: static;

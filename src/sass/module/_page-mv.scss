@@ -41,3 +41,9 @@
       background-image: url(../images/information/information-mv-pc.jpg);
     }
 }
+.page-mv--blog{
+  background-image: url(../images/blog/blog-mv.jpg);
+    @include mq("md") {
+      background-image: url(../images/blog/blog-mv-pc.jpg);
+    }
+}

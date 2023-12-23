@@ -14,19 +14,24 @@
   }
 }
 .blog-card__inner:hover {
-  opacity: 0.5;
+  // opacity: 0.8;
 }
+
 
 .blog-card__image-container {
   width: 100%;
+  overflow: hidden;
 }
 .blog-card__image-container img {
   width: 100%;
-
   object-fit: cover;
   aspect-ratio: 301 / 201;
+  transform: scale(1);
+  transition: transform 0.3s;
 }
-
+.blog-card__inner:hover img{
+  transform: scale(1.2);
+}
 .blog-card__body{
     margin-top: rem(18);
   @include mq("md") {

@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.blog-cards{
+    display: grid;
+    justify-content: center;
+    grid-row-gap: rem(40);
+    grid-column-gap: rem(40);
+    grid-template-columns: 1fr;
+    padding-top: rem(3);
+    padding-left: rem(6);
+    padding-right: rem(6);
+    padding-bottom: rem(3);
+    @include mq("md") {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0;
+      grid-row-gap: rem(80);
+    }
+}
+
+.blog-cards.blog-cards--blog{
+  @include mq("md") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

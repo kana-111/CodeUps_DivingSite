@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.blog-contents{
+  position: relative;
+}
+
+.blog-contents__inner{
+    display: flex;
+    flex-direction: column;
+    gap: calc((80 / 1130)*100%);
+      @include mq("md") {
+     flex-direction: row;
+      }
+}
+.blog-contents__layer-fish{
+  position: absolute;
+}

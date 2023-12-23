@@ -1,0 +1,25 @@
+@use "global" as *;
+
+
+.side-head{
+    border-left: rem(8) solid $accentGreen;
+    padding-left: rem(16);
+}
+.side-head__title{
+    font-size: rem(24);
+    color: $deepGreen;
+    font-weight: $regular;
+    display: flex;
+    align-items: center;
+}
+
+.side-head__title::before{
+    content:"";
+     width: rem(50);
+     height: rem(50);
+     background-image: url(../images/blog/title-bg.svg);
+     background-size: contain;
+     background-repeat: no-repeat;
+     margin-right: rem(8);
+
+}

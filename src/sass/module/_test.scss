@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.archive-list:not(:first-child) {
+    margin-top: rem(4);
+}
+
+.archive-item__year,
+.archive-item__month {
+    cursor: pointer;
+    display: flex;
+    font-family: "Noto Sans Jp";
+    font-size: rem(24);
+    font-weight: $regular;
+    color: $accentGreen;
+    align-items: center;
+
+}
+
+.archive-item__year::before,
+.archive-item__month::before {
+    content: "";
+    width: rem(20);
+    height: rem(20);
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    margin-right: rem(8);
+    background-color: $accentGreen;
+    transition: clip-path 0.3s;
+}
+
+.archive-item__year.is-open::before {
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+.archive-item__month-wrap {
+    display: none;
+    padding-left: rem(32);
+}
