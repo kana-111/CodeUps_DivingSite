@@ -1,11 +1,5 @@
 @use "global" as *;
 
-
-.campaign-content {
-position: relative;
-}
-
-
 .campaign-content__cats {
 display: grid;
 column-gap: rem(21);
@@ -28,19 +22,6 @@ justify-content: center;
         grid-template-columns: repeat(2,1fr);
         row-gap: rem(80);
       }
-}
-
-.campaign-content__layer-fish{
-    position: absolute;
-    top: rem(-30);
-    left: calc(50% - min(48vw, rem(620)));
-    transform: scaleX(-1);
-    width: rem(120);
-    z-index: -1;
-    @include mq("md") {
-        top: rem(-70);
-   width: rem(301);
-    }
 }
 
 .campaign-content__pagination{

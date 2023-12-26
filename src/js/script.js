@@ -183,7 +183,7 @@ jQuery(function ($) {
 //任意のタブにURLからリンクするための設定
 function GethashID(hashIDName) {
   if (hashIDName) {
-    $(".tab__item")
+    $(".js-tab-item")
       .find("a")
       .each(function () {
         //タブ内のaタグ全てを取得
@@ -191,10 +191,10 @@ function GethashID(hashIDName) {
         if (idName == hashIDName) {
           //リンク元の指定されたURLのハッシュタグ（例）http://example.com/#lunch←この#の値とタブ内のリンク名（例）#lunchが同じかをチェック
           var parentElm = $(this).parent(); //タブ内のaタグの親要素（li）を取得
-          $(".tab__item").removeClass("active"); //タブ内のliについているactiveクラスを取り除き
+          $(".js-tab-item").removeClass("active"); //タブ内のliについているactiveクラスを取り除き
           $(parentElm).addClass("active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
           //表示させるエリア設定
-          $(".tab__content-area").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
+          $(".js-content-area").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
           $(hashIDName).addClass("is-active"); //表示させたいエリアのタブリンク名をクリックしたら、表示エリアにis-activeクラスを追加
         }
       });
@@ -202,7 +202,7 @@ function GethashID(hashIDName) {
 }
 
 //タブをクリックしたら
-$(".tab__item a").on("click", function () {
+$(".js-tab-item a").on("click", function () {
   var idName = $(this).attr("href"); //タブ内のリンク名を取得
   GethashID(idName); //設定したタブの読み込みと
   return false; //aタグを無効にする
@@ -210,13 +210,13 @@ $(".tab__item a").on("click", function () {
 
 // 上記の動きをページが読み込まれたらすぐに動かす
 $(window).on("load", function () {
-  $(".tab__item:first-of-type").addClass("active"); //最初のliにactiveクラスを追加
-  $(".tab__content-area:first-of-type").addClass("is-active"); //最初の.areaにis-activeクラスを追加
+  $(".js-tab-item:first-of-type").addClass("active"); //最初のliにactiveクラスを追加
+  $(".js-content-area:first-of-type").addClass("is-active"); //最初の.areaにis-activeクラスを追加
   var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
   GethashID(hashName); //設定したタブの読み込み
 });
 
-//side-
+//blog-side
 jQuery(function ($) {
   $('.js-archive-open').on('click', function () {
       $(this).next().slideToggle();

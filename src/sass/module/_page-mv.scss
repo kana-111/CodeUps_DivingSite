@@ -47,3 +47,10 @@
       background-image: url(../images/blog/blog-mv-pc.jpg);
     }
 }
+
+.page-mv--voice{
+  background-image: url(../images/voice/voice-mv.jpg);
+    @include mq("md") {
+      background-image: url(../images/voice/voice-mv-pc.jpg);
+    }
+}

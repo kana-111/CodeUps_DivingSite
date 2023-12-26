@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.voice-tab{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: rem(16);
+    column-gap: rem(21);
+      @include mq("md") {
+        grid-template-columns: repeat(4, rem(162));
+      }
+}
+
+.voice-tab__item{
+    padding: rem(6);
+    font-size: rem(14);
+    line-height: calc(22 / 14);
+    font-size: $regular;
+    color: $accentGreen;
+    border: $accentGreen rem(1) solid;
+    background-color: $white;
+    text-align: center;
+    transition: background-color 0.3s,color 0.3s;
+    cursor: pointer;
+    // width: rem(162);
+    text-transform: uppercase;
+}
+
+.voice-tab__item.active{
+    background-color: $accentGreen;
+    color: $white;
+
+}

@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.blog-article__date{
+    font-family: "Gotu",sans-serif;
+    font-size: rem(14);
+    color: $deepGreen;
+}
+.blog-article__title{
+margin-top: rem(8);
+border-bottom: $accentGreen rem(1) solid;
+}
+.blog-article__img,
+.blog-article__text,
+.blog-article__list{
+    margin-top: rem(24);
+      @include mq("md") {
+     margin-top: rem(40);
+      }
+}
+
+.blog-article__list-item{
+    display: flex;
+    align-items: center;
+}
+
+.blog-article__list-item::before{
+    content: "";
+    width: rem(18);
+    height: rem(18);
+    background-image: url(../images/blog/starfish.svg);
+    background-size: cover;
+    margin-right: rem(9);
+}
+
+.blog-article__list-item:not(:first-child){
+    margin-top: rem(4);
+}

@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .blog-content{
-    width: 100%;
+    flex: 1;
       @include mq("md") {
-     width: calc($inner - (rem(294) + rem(80)));
+
       }
 }
 .blog-content__pagination{

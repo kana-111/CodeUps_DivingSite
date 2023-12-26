@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.voice-content__tab-content{
+    display: none;
+}
+
+.voice-content__tab-content.is-active{
+    display: block;
+}
