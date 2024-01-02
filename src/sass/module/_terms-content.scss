@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.terms-content__wrap{
+width: 100%;
+max-width: rem(800);
+margin-inline: auto;
+}
+
+.terms-content__title{
+    font-size: rem(24);
+    font-weight: $normal;
+    color: $deepGreen;
+      @include mq("md") {
+     font-size: rem(32);
+      }
+}
+
+.terms-content__text-area{
+    margin-top: rem(40);
+}
+
+.terms-content__text-unit:not(:first-child){
+    margin-top: rem(40);
+}
+
+.terms-content__text,
+.terms-content__item{
+    font-size: rem(16);
+    line-height: calc(32 / 16);
+    color: $deepGreen;
+    font-weight: $regular;
+}
+
+.terms-content__list{
+    list-style-type: decimal;
+    list-style-position:inside;
+    padding-left: 1em;
+    text-indent: -1em;
+}

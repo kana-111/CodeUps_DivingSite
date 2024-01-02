@@ -216,9 +216,9 @@ $(window).on("load", function () {
   GethashID(hashName); //設定したタブの読み込み
 });
 
-//blog-side
+//toggle
 jQuery(function ($) {
-  $('.js-archive-open').on('click', function () {
+  $('.js-archive-open,.js-faq-open').on('click', function () {
       $(this).next().slideToggle();
       $(this).toggleClass('is-open');
   });

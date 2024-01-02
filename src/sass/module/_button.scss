@@ -15,6 +15,10 @@
    padding-right: rem(38);
     }
 }
+.button.button--revers{
+  background-color:$white;
+  background-color: $white;
+}
 .button::after{
   position: absolute;
   top: 0;
@@ -27,6 +31,10 @@
   content: "";
   transition: .1s cubic-bezier(.45, 0, .55, 1);
   transform-origin: left top;
+}
+
+.button.button--revers::after{
+  background-color: $accentGreen;
 }
 .button:hover::after{
   transform: scale(1, 1);
@@ -42,10 +50,17 @@
   border: rem(1) solid $accentGreen;
   content: "";
 }
+.button.button--revers::before{
+  border-color: $white;
+}
 
 .button:hover .button__text{
   color: $accentGreen;
 }
+.button.button--revers:hover .button__text{
+  color: $white;
+}
+
 .button__text{
   font-family: $second-font-family;
   display: flex;
@@ -55,6 +70,9 @@
   font-size: rem(14);
   line-height: 1.571;
   transition: color .3s;
+}
+.button.button--revers .button__text{
+color: $accentGreen;
 }
 
 .button__text::before{
@@ -69,6 +87,7 @@
   background-color: $white;
   content: "";
 }
+
 .button__text::after{
   width: rem(40);
   height: rem(1);
@@ -78,7 +97,15 @@
   content: "";
   transition: background-color .3s;
 }
-
-.button:hover .button__text::before, .button:hover .button__text::after{
+.button.button--revers .button__text::before,
+.button.button--revers .button__text::after{
   background-color: $accentGreen;
+}
+.button:hover .button__text::before,
+.button:hover .button__text::after{
+  background-color: $accentGreen;
+}
+.button.button--revers:hover .button__text::before,
+.button.button--revers:hover .button__text::after{
+  background-color: $white;
 }

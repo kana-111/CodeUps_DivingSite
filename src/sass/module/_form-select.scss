@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.form-select select {
+    padding: rem(11.5) rem(50) rem(11.5) rem(15);
+    width: 100%;
+    font-size: rem(15);
+    line-height: 1;
+    border-radius: 0;
+    border: 1px solid $accentGreen;
+    background-image: url(../images/contact/arrow.png);
+    background-repeat: no-repeat;
+    background-size: rem(15);
+    background-position: right rem(15) top rem(10);
+    appearance: none;
+    cursor: pointer;
+}
+
+.form-select select::-ms-expand {
+    display: none;
+}
+
+.form-select select:focus {
+    border: 1px solid $accentGreen;
+    box-shadow: none;
+		outline: none;
+}

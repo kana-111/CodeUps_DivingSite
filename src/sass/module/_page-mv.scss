@@ -54,3 +54,28 @@
       background-image: url(../images/voice/voice-mv-pc.jpg);
     }
 }
+
+.page-mv--price{
+  background-image: url(../images/price/price-mv.jpg);
+    @include mq("md") {
+      background-image: url(../images/price/price-mv-pc.jpg);
+    }
+}
+.page-mv--faq{
+  background-image: url(../images/faq/faq-mv.jpg);
+    @include mq("md") {
+      background-image: url(../images/faq/faq-mv-pc.jpg);
+    }
+}
+.page-mv--contact{
+  background-image: url(../images/contact/contact-mv.jpg);
+    @include mq("md") {
+      background-image: url(../images/contact/contact-mv-pc.jpg);
+    }
+}
+.page-mv--common{
+  background-image: url(../images/common/common-mv.jpg);
+    @include mq("md") {
+      background-image: url(../images/common/common-mv-pc.jpg);
+    }
+}

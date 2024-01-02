@@ -132,145 +132,82 @@
         </div>
       </div>
     </header>
-    <!-- campaign-mv -->
-    <div class="page-mv page-mv--price">
-      <h1 class="mv-title">Price</h1>
+    <!-- contact-mv -->
+    <div class="page-mv page-mv--contact">
+      <h1 class="mv-title">Contact</h1>
     </div>
     <main>
       <!-- breadcrumb -->
-      <div class="breadcrumb price-breadcrumb-layout">
+      <div class="breadcrumb contact-breadcrumb-layout">
         <div class="breadcrumb__inner inner">
-          <a href="index.html">top</a>
+          <a href="./index.html">top</a>
           <span class="breadcrumb__arrow"></span>
-          <a href="price.html">料金表</a>
+          <a href="./contact.html">お問い合わせ</a>
         </div>
       </div>
-      <!-- price-content -->
-      <div class="price-content price-content-layout layer-fish">
-        <div class="price-content__inner inner">
-          <div class="price-content__list price-list">
-            <p class="price-list__title">ライセンス講習</p>
-            <div class="price-list__wrap">
-              <dl class="price-list__unit">
-                <dt class="price-list__menu">オープンウォーター<wbr>ダイバーコース</dt>
-                <dd class="price-list__price">50,000</dd>
-              </dl>
-              <dl class="price-list__unit">
-                <dt class="price-list__menu">アドバンスド<wbr>オープンウォーターコース</dt>
-                <dd class="price-list__price">60,000</dd>
-              </dl>
-              <dl class="price-list__unit">
-                <dt class="price-list__menu">レスキュー＋EFRコース</dt>
-                <dd class="price-list__price">70,000</dd>
-              </dl>
+      <!-- contact-content -->
+      <main class="contact-content layer-fish contact-content-layout">
+        <div class="contact-content__inner">
+          <form class="contac-content__form form" action="">
+            <dl class="form__wrap">
+              <dt class="form__label">お名前<span>必須</span></dt>
+              <dd class="form__input form-input">
+                <input type="text" placeholder="沖縄 太郎">
+              </dd>
+            </dl>
+            <dl class="form__wrap">
+              <dt class="form__label">メールアドレス<span>必須</span></dt>
+              <dd class="form__input form-input">
+                <input type="email" placeholder="aaa000@ggmail.com">
+              </dd>
+            </dl>
+            <dl class="form__wrap">
+              <dt class="form__label">電話番号<span>必須</span></dt>
+              <dd class="form__input form-input">
+                <input type="tel" placeholder="000-0000-0000">
+              </dd>
+            </dl>
+            <dl class="form__wrap">
+              <dt class="form__label">お問い合わせ項目<span>必須</span></dt>
+              <dd class="form__checkbox form-checkbox">
+                <label><input type="checkbox" name="item" value="ダイビング講習について"><span>ダイビング講習について</span></label>
+                <label><input type="checkbox" name="item" value="ファンダイビングについて"><span>ファンダイビングについて</span></label>
+                <label><input type="checkbox" name="item" value="体験ダイビングについて"><span>体験ダイビングについて</span></label>
+              </dd>
+            </dl>
+            <dl class="form__wrap">
+              <dt class="form__label">キャンペーン</dt>
+              <dd class="form__select form-select">
+                <select>
+                  <option hidden>キャンペーン内容を選択</option>
+                  <option value="ライセンス取得">ライセンス取得</option>
+                  <option value="貸切体験ダイビング">貸切体験ダイビング</option>
+                  <option value="ナイトダイビング">ナイトダイビング</option>
+                  <option value="貸切ファンダイビング">貸切ファンダイビング</option>
+                </select>
+              </dd>
+            </dl>
+            <dl class="form__wrap form__wrap--textarea">
+              <dt class="form__label">お問い合わせ内容<span>必須</span></dt>
+              <dd class="form__textarea form-textarea">
+                <textarea name="message"></textarea>
+              </dd>
+            </dl>
+            <div class="form__wrap form__wrap--privacy">
+              <div class="form__checkbox form-checkbox form-checkbox--privacy">
+                <label><input type="checkbox" name="item" value="ダイビング講習について"><span>個人情報の取り扱いについて同意のうえ送信します。</span></label>
+              </div>
             </div>
-          </div>
-          <div class="price-content__list price-list">
-            <p class="price-list__title">体験ダイビング</p>
-            <div class="price-list__wrap">
-              <dl class="price-list__unit">
-                <dt class="price-list__menu">ビーチ体験ダイビング(半日)</dt>
-                <dd class="price-list__price">7,000</dd>
-              </dl>
-              <dl class="price-list__unit">
-                <dt class="price-list__menu">ビーチ体験ダイビング(1日)</dt>
-                <dd class="price-list__price">14,000</dd>
-              </dl>
-              <dl class="price-list__unit">
-                <dt class="price-list__menu">ボート体験ダイビング(半日)</dt>
-                <dd class="price-list__price">10,000</dd>
-              </dl>
-              <dl class="price-list__unit">
-                <dt class="price-list__menu">ボート体験ダイビング(1日)</dt>
-                <dd class="price-list__price">18,000</dd>
-              </dl>
+            <div class="form__submit-wrap">
+              <a href="#" class="button"><span class="button__text">Send</span></a>
             </div>
-          </div>
-          <div class="price-content__list price-list">
-            <p class="price-list__title">ファンダイビング</p>
-            <div class="price-list__wrap">
-              <dl class="price-list__unit">
-                <dt class="price-list__menu">ビーチダイビング(2ダイブ)</dt>
-                <dd class="price-list__price">14,000</dd>
-              </dl>
-              <dl class="price-list__unit">
-                <dt class="price-list__menu">ボートダイビング(2ダイブ)</dt>
-                <dd class="price-list__price">18,000</dd>
-              </dl>
-              <dl class="price-list__unit">
-                <dt class="price-list__menu">スペシャルダイビング(2ダイブ)</dt>
-                <dd class="price-list__price">24,000</dd>
-              </dl>
-              <dl class="price-list__unit">
-                <dt class="price-list__menu">ナイトダイビング(1ダイブ)</dt>
-                <dd class="price-list__price">10,000</dd>
-              </dl>
-            </div>
-          </div>
-          <div class="price-content__list price-list">
-            <p class="price-list__title">スペシャルダイビング</p>
-            <div class="price-list__wrap">
-              <dl class="price-list__unit">
-                <dt class="price-list__menu">貸切ダイビング(2ダイブ)</dt>
-                <dd class="price-list__price">24,000</dd>
-              </dl>
-              <dl class="price-list__unit">
-                <dt class="price-list__menu">1日ダイビング(3ダイブ)</dt>
-                <dd class="price-list__price">32,000</dd>
-              </dl>
-              <dl class="price-list__unit">
-                <dt class="price-list__menu">ナイトダイビング(2ダイブ)</dt>
-                <dd class="price-list__price">14,000</dd>
-              </dl>
-            </div>
-          </div>
+          </form>
         </div>
         <div class="layer-fish__img"><img src="./assets/images/common/fish.svg" alt="青い魚のイラスト" /></div>
-      </div>
-      <!-- contact -->
-      <section class="contact price-contact-layout">
-        <div class="contact__container">
-          <div class="contact__inner">
-            <div class="contact__shop-desc">
-              <div class="contact__logo-container"><img src="./assets/images/common/CodeUps.svg" alt="" /></div>
-              <div class="contact__info-wrap">
-                <div class="contact__shop-info">
-                  <p class="contact__info">沖縄県那覇市1-1</p>
-                  <p class="contact__info">TEL:<a class="contact__tel-link" href="tel:+81-0120-000-0000">0120-000-0000</a></p>
-                  <p class="contact__info">営業時間:8:30-19:00</p>
-                  <p class="contact__info">定休日:毎週火曜日</p>
-                </div>
-                <div class="contact__map-container">
-                  <div class="contact__map">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.6127406086844!2d127.67605304202911!3d26.212481172470984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5699e88a1f5b9%3A0x754ce0d09feedce9!2z44CSOTAwLTAwMjEg5rKW57iE55yM6YKj6KaH5biC5rOJ5bSO77yR5LiB55uu77yZ4oiS77yR77yZIOaylue4hOecjOW6gQ!5e0!3m2!1sja!2sjp!4v1694967961625!5m2!1sja!2sjp"
-                      style="border: 0"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="contact_contact-area">
-              <div class="contact__heading heading">
-                <p class="heading__title-en heading__title-en--large">Contact</p>
-                <h2 class="heading__title-jp heading__title-jp--large">お問い合わせ</h2>
-              </div>
-              <p class="contact__text">ご予約・お問い合わせはコチラ</p>
-              <div class="contact__button-wrap">
-                <a href="#" class="button button--shadow"><span class="button__text">Contact us</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="contact__layer-fish"><img src="./assets/images/common/fish.svg" alt="青い魚のイラスト" /></div>
-      </section>
+      </main>
       <div class="page-top"><a class="page-top__link arrow arrow--top" href="#"></a></div>
-    </main>
     <!-- フッター -->
-    <footer class="footer price-footer-layout">
+    <footer class="footer contact-footer-layout">
       <div class="footer__inner inner">
         <div class="footer__content">
           <div class="footer__heading">
@@ -339,23 +276,5 @@
         <small class="footer__copy">Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.</small>
       </div>
     </footer>
-
-    <!-- <div class="modaal-outer-wrapper">
-      <div class="modaal-inner-wrapper">
-        <div class="modaal-container">
-          <div class="modaal-content modaal-focus" aria-hidden="false" aria-label="Dialog Window - Close (Press escape to close)" role="dialog">
-            <div class="modaal-gallery-item-wrap">
-              <div class="modaal-gallery-item gallery-item-0 is_active" aria-label="Image 0 no description" tabindex="0">
-                <img src="./assets/images/about/gallery01-pc.jpg" alt=" " style="width: 100%" />
-                <div class="modaal-gallery-label"><span class="modaal-accessible-hide">Image 1</span></div>
-              </div>
-            </div>
-            <button type="button" class="modaal-gallery-control modaal-gallery-prev modaal-gallery-prev-inner" id="modaal-gallery-prev" aria-label="Previous image (use left arrow to change)" style="display: none"><span>Previous Image</span></button
-            ><button type="button" class="modaal-gallery-control modaal-gallery-next modaal-gallery-next-inner" id="modaal-gallery-next" aria-label="Next image (use right arrow to change)" style="display: none"><span>Next Image</span></button>
-          </div>
-          <button type="button" class="modaal-close" id="modaal-close" aria-label="Close (Press escape to close)"><span>Close</span></button>
-        </div>
-      </div>
-    </div> -->
   </body>
 </html>

@@ -14,6 +14,10 @@ align-items: center;
     font-size: rem(14);
 }
 
+.breadcrumb__inner.breadcrumb__inner--404 a{
+    color: $white;
+}
+
 .breadcrumb__arrow{
     display: inline-block;
     width: rem(6);
@@ -21,4 +25,9 @@ align-items: center;
     border-top: rem(1) solid $deepGreen;
     border-right: rem(1) solid $deepGreen;
     transform: rotate(45deg);
+}
+
+.breadcrumb__arrow.breadcrumb__arrow--white{
+    border-top-color: $white;
+    border-right-color: $white;
 }

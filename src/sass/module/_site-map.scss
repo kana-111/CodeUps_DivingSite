@@ -71,3 +71,12 @@
   font-size: rem(16);
   line-height: 1.125;
 }
+
+.site-map__main-menu.site-map__main-menu--black::before{
+  background-image: url(../images/common/starfhish-bk.svg);
+}
+
+.site-map__main-menu.site-map__main-menu--black,
+.site-map__item.site-map__item--black{
+  color: $deepGreen;
+}

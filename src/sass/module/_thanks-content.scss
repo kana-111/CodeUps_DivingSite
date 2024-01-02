@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.thanks-content__inner{
+    text-align: center;
+}
+.thanks-content__title,
+.thanks-content__text{
+color: $deepGreen;
+font-size: rem(16);
+font-weight: $regular;
+}
+
+.thanks-content__text{
+    margin-top: rem(40);
+    word-break: auto-phrase;
+}
