@@ -22,3 +22,11 @@
 .form-input input::placeholder{
 	color: #ddf0f1;
 }
+
+.form-input.form-input--error input{
+	border-color: $red;
+	background-color: rgba($color: $red, $alpha: 0.2);
+}
+.form-input.form-input--error input::placeholder{
+	color: $white;
+}
