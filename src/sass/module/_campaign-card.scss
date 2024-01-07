@@ -22,6 +22,11 @@
     aspect-ratio: 334/225;
   }
 }
+.campaign-card__image.campaign-card__image--campaign{
+    @include mq("md") {
+   aspect-ratio: 334/223;
+    }
+}
 
 .campaign-card__body {
   padding: rem(16) rem(16) rem(16);
@@ -32,7 +37,12 @@ height: 100%;
     padding: rem(24) rem(16) rem(31);
   }
 }
+.campaign-card__body.campaign-card__body--campaign{
+    @include mq("md") {
+   padding: rem(24) rem(24) rem(43);
+    }
 
+}
 .campaign-card__tag {
   display: inline-block;
   padding: rem(6) rem(11) rem(4);
@@ -46,6 +56,7 @@ height: 100%;
   }
 }
 
+
 .campaign-card__title {
   margin-top: rem(4);
   flex-grow: 1;
@@ -58,7 +69,12 @@ height: 100%;
     padding-bottom: rem(7);
     }
 }
-
+.campaign-card__title.campaign-card__title--campaign{
+    @include mq("md") {
+   font-size: rem(24);
+   padding-bottom: rem(3);
+    }
+}
 .campaign-card__title--center{
   text-align: center;
 }
@@ -75,6 +91,11 @@ height: 100%;
     font-size: rem(16);
   }
 }
+.campaign-card__text.campaign-card__text--campaign{
+    @include mq("md") {
+   margin-top: rem(28);
+    }
+}
 
 .campaign-card__price {
   margin-top: rem(5);
@@ -82,9 +103,10 @@ height: 100%;
     margin-top: rem(1);
   }
 }
-
 .campaign-card__price.campaign-card__price--center{
-  text-align: center;
+    @include mq("md") {
+   text-align: center;
+    }
 }
 
 .campaign-card__before-price,
@@ -104,7 +126,11 @@ height: 100%;
     font-size: rem(24);
   }
 }
-
+.campaign-card__before-price.campaign-card__before-price--campaign{
+    @include mq("md") {
+   margin-left: 0;
+    }
+}
 .campaign-card__before-price.campaign-card__before-price--small{
   font-size: rem(20);
   margin-left: rem(0);
@@ -120,7 +146,11 @@ height: 100%;
     margin-left: rem(22);
   }
 }
-
+.campaign-card__after-price.campaign-card__after-price--campaign{
+    @include mq("md") {
+   margin-left: rem(38);
+    }
+}
 .campaign-card__after-price.campaign-card__after-price--small{
   font-size: rem(32);
   margin-left: rem(16);
@@ -142,7 +172,7 @@ height: 100%;
   content: "";
 }
 .campaign-card__disc-wrap{
-  margin-top: rem(24);
+  margin-top: rem(14);
 }
 
 .campaign-card__disc{
@@ -155,6 +185,9 @@ height: 100%;
   margin-top: rem(24);
   text-align: center;
   color: $accentGreen;
+    @include mq("md") {
+   margin-top: rem(32);
+    }
 }
 
 .campaign-card__date{
@@ -172,5 +205,8 @@ font-weight: $regular;
 
 .campaign-card__button-wrap {
 margin-top: rem(16);
+  @include mq("md") {
+ margin-top: rem(13);
+  }
 }
 

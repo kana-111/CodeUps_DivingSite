@@ -10,6 +10,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
   @include mq("md") {
+    top: 59%;
  font-size: rem(80);
  line-height: 1.25;
   }

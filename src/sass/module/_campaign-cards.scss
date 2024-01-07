@@ -1,5 +1,22 @@
 @use "global" as *;
 
+
+.campaign-cards{
+  margin-top: rem(40);
+  padding-right: rem(35);
+  padding-left: rem(35);
+  display: grid;
+  row-gap: rem(40);
+  column-gap: rem(40);
+  grid-template-columns: repeat(auto-fit, minmax(rem(280),1fr));
+  justify-content: center;
+  @include mq("md") {
+      grid-template-columns: repeat(2,1fr);
+      row-gap: rem(80);
+      padding: 0;
+    }
+}
+
 .campaign-cards__item{
     width: rem(280);
       @include mq("md") {

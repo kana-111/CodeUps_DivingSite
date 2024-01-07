@@ -39,16 +39,18 @@ position: relative;
 .pagination__button.pagination__button--next::before {
     position: absolute;
     content: "";
-    width: rem(13);
-    height: rem(13);
+    width: rem(12);
+    height: rem(12);
     border-top: rem(1) solid $accentGreen;
     border-right: rem(1) solid $accentGreen;
 }
 .pagination__button.pagination__button--prev::before{
     transform: rotate(-135deg);
+    left: rem(15);
 }
 .pagination__button.pagination__button--next::before{
     transform: rotate(45deg);
+    left: rem(8);
 }
 
 .pagination__button:hover.pagination__button--prev::before,
