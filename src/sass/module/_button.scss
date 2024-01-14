@@ -19,6 +19,13 @@
   background-color:$white;
   background-color: $white;
 }
+
+.button.button--contact{
+width: rem(202);
+padding-right: rem(55);
+padding-left: rem(55);
+}
+
 .button::after{
   position: absolute;
   top: 0;
@@ -96,6 +103,9 @@ color: $accentGreen;
   background-color: $white;
   content: "";
   transition: background-color .3s;
+}
+.button__text.button__text--contact::after{
+  margin-left: rem(13);
 }
 .button.button--revers .button__text::before,
 .button.button--revers .button__text::after{

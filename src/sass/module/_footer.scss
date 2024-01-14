@@ -50,12 +50,15 @@
   margin-left: rem(12);
 }
 .footer__map {
-  margin-top: rem(35);
+  margin-top: rem(36);
+    @include mq("md") {
+      margin-top: rem(22);
+    }
 }
 .footer__copy {
   font-family: "Gotu",serif;
   display: block;
-  margin-top: rem(37);
+  margin-top: rem(40);
   color: $white;
   font-size: rem(12);
   line-height: 1.5;

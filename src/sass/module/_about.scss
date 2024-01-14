@@ -1,65 +1,11 @@
 @use "global" as *;
-
-.about__content {
+.about__content{
   margin-top: rem(54);
-  @include mq("md") {
-    position: relative;
-    margin-top: rem(120);
-  }
-}
-.about__content.about__content--about{
-  position: relative;
     @include mq("md") {
-   position: static;
+   margin-top: rem(119);
     }
 }
-.about__text-container {
-  margin-top: rem(40);
-  @include mq("md") {
-    display: flex;
-    position: absolute;
-    top: 20.7%;
-    right: 0;
-    margin-right: rem(41);
-    margin-left: rem(20);
-    margin-top: rem(0);
-  }
-}
 
-
-.about__text-wrap {
-  @include mq("md") {
-    max-width: rem(400);
-    margin-left: rem(40);
-  }
-}
-.about__title{
-  font-family: $second-font-family;
-}
-
-.about__title.about__title--about{
-  position: absolute;
-  top: rem(24);
-  left: calc(50% - min(44vw, 15.75rem));
-  color: $white;
-    @include mq("md") {
-   position: static;
-    }
-}
-.about__text {
-  margin-top: rem(16);
-  white-space: normal;
-  @include mq("md") {
- margin-top: 0;
-  }
-}
-.about__button-wrap {
-  text-align: center;
-  margin-top: rem(50);
-  @include mq("md") {
-    margin-top: rem(40);
-  }
-}
 .about__layer-image {
   position: absolute;
   right: calc(50% - min(48vw, rem(637)));

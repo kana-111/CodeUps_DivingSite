@@ -7,11 +7,12 @@
     column-gap: rem(21);
       @include mq("md") {
         grid-template-columns: repeat(4, rem(162));
+        column-gap: rem(32);
       }
 }
 
 .voice-tab__item{
-    padding: rem(6);
+    padding: rem(6) rem(6) rem(4);
     font-size: rem(14);
     line-height: calc(22 / 14);
     font-size: $regular;

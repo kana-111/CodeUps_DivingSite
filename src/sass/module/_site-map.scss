@@ -2,17 +2,15 @@
 
 .site-map__wrap{
   display: grid;
-  @include mq("md"){
-    margin-top: rem(24);
-
-    grid-template-columns: repeat(4,auto);
-    grid-template-rows: none;
-  }
-
   column-gap: rem(8);
   row-gap: rem(40);
   grid-template-columns: repeat(2,auto) ;
   grid-template-rows: repeat(2,auto);
+  @include mq("md"){
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: none;
+    column-gap: rem(46);
+  }
 }
 .site-map__group:nth-child(2){
   @include mq("md"){

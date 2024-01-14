@@ -6,6 +6,7 @@
     gap: rem(80);
       @include mq("md") {
      flex-direction: row;
+     gap: rem(86);
       }
 }
 .blog-contents__article{

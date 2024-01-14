@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .voice-footer-layout{
-margin-top: rem(100);
+margin-top: rem(102);
   @include mq("md") {
  margin-top: rem(160);
   }

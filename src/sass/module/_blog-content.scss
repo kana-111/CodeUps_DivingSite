@@ -7,5 +7,14 @@
       }
 }
 .blog-content__pagination{
-    margin-top: rem(80);
+    margin-top: rem(77);
+      @include mq("md") {
+     margin-top: rem(80);
+      }
+}
+.blog-content__pagination.blog-content__pagination--single{
+    margin-top: rem(40);
+      @include mq("md") {
+     margin-top: rem(83);
+      }
 }

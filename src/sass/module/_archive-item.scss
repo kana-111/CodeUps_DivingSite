@@ -3,7 +3,9 @@
 .archive-list:not(:first-child) {
     margin-top: rem(4);
 }
-
+.archive-list__item:not(:first-child){
+    margin-top: rem(8);
+}
 .archive-item__year,
 .archive-item__month {
     cursor: pointer;
@@ -22,7 +24,8 @@
     width: rem(20);
     height: rem(20);
     clip-path: polygon(0 0, 0% 100%, 100% 50%);
-    margin-right: rem(8);
+    margin-right: rem(10);
+    margin-top: rem(8);
     background-color: $accentGreen;
     transition: clip-path 0.3s;
 }
@@ -33,5 +36,6 @@
 
 .archive-item__month-wrap {
     display: none;
-    padding-left: rem(32);
+    margin-left: rem(28);
+    margin-top: rem(3);
 }

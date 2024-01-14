@@ -1,68 +1,85 @@
 @use "global" as *;
 
 .form-checkbox label {
-    display: block;
+  display: block;
 }
 
 .form-checkbox label:not(:first-of-type) {
-    margin-top: rem(10);
-    @include mq(md){
-        margin-top: 0;
-    }
+  margin-top: rem(2);
+  @include mq(md) {
+    margin-top: rem(4);
+  }
 }
 
 .form-checkbox input {
-    display: none;
+  display: none;
 }
 
 .form-checkbox input + span {
-    cursor: pointer;
-    display: inline-block;
-    padding-left: rem(25);
-    position: relative;
-    font-size: rem(15);
-    line-height: 1;
+  cursor: pointer;
+  display: inline-block;
+  padding-left: rem(24);
+  position: relative;
+  font-size: rem(16);
+  line-height: 1;
+  color: $deepGreen;
 }
-.form-checkbox.form-checkbox--privacy input + span{
-    padding-left: rem(32);
-    text-align: left;
-    line-height: calc(22 / 14);
+
+.form-checkbox.form-checkbox--privacy{
+    padding-left: rem(34);
+    padding-right: rem(28);
+}
+
+.form-checkbox.form-checkbox--privacy input + span {
+  text-align: left;
+  line-height: calc(22 / 14);
+  font-size: rem(14);
+  display: flex;
+  align-items: start;
+  padding-left: rem(30);
+    @include mq("md") {
+        padding-left: rem(33);
+   
+    }
 }
 
 .form-checkbox input + span::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    background: #fff;
-    border: 1px solid $accentGreen;
-    display: block;
-    width: rem(15);
-    height: rem(15);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid $accentGreen;
+  display: block;
+  width: rem(15);
+  height: rem(15);
 }
-.form-checkbox.form-checkbox--privacy input + span::before{
-    width: rem(22);
-    height: rem(22);
+
+.form-checkbox.form-checkbox--privacy input + span::before {
+  width: rem(22);
+  height: rem(22);
+  transform: translateY(0);
+  top: -3%;
 }
 .form-checkbox input + span::after {
-    content: "";
-    margin-top: rem(-2);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%) rotate(-45deg);
-    display: block;
-    width: rem(15);
-    height: rem(8);
-    border-bottom: rem(3) solid $red;
-    border-left: rem(3) solid $red;
-    transition:  .3s;
-    opacity: 0;
+  content: "";
+  margin-top: rem(-2);
+  position: absolute;
+  top: rem(5);
+  left: rem(2);
+  transform: rotate(-45deg);
+  display: block;
+  width: rem(10);
+  height: rem(6);
+  border-bottom: rem(2) solid $red;
+  border-left: rem(2) solid $red;
+  transition: 0.3s;
+  opacity: 0;
 }
-.form-checkbox.form-checkbox--privacy input + span::after{
-    left: rem(3);
+.form-checkbox.form-checkbox--privacy input + span::after {
+  left: rem(3);
 }
 .form-checkbox input:checked + span::after {
-    opacity: 1;
+  opacity: 1;
 }

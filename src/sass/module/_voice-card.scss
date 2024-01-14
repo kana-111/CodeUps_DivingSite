@@ -5,9 +5,9 @@
 }
 
 .voice-card__inner {
-  padding: rem(13) rem(16) rem(24);
+  padding: rem(14) rem(16) rem(24);
   @include mq("md") {
-    padding: rem(22) rem(24) rem(24);
+    padding: rem(19) rem(24) rem(24);
   }
 }
 
@@ -38,7 +38,7 @@
   font-size: rem(12);
   line-height: 1;
   @include mq("md") {
-    margin-top: rem(19);
+    margin-top: rem(22);
   }
 }
 .voice-card__head-text-inner {

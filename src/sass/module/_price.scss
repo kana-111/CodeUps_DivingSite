@@ -102,7 +102,7 @@ border-bottom: rem(1) solid $accentGreen;
 .price__layer-fish {
   @include mq("md") {
     position: absolute;
-    bottom: rem(-42);
+    bottom: rem(-43);
     left: calc(50% - min(48vw, rem(620)));
     width: rem(437);
   }

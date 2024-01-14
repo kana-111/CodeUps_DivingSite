@@ -18,8 +18,9 @@
 .popular-item__content-wrap{
     flex: 1;
 }
+
 .popular-item__img{
-    width: 41.156%;
+    width: 46.156%;
     // max-width: rem(121);
 }
 .popular-item__img img{
@@ -35,10 +36,12 @@
     line-height: calc(18 / 12);
     color: $deepGreen;
     font-weight: $regular;
+    vertical-align: super;
 }
 
 .popular-item__title{
     font-family: "Noto sans jp",sans-serif;
     font-size: rem(16);
     color: $deepGreen;
+    margin-top: rem(-3);
 }

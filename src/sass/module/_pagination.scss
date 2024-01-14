@@ -5,6 +5,9 @@ display: flex;
 justify-content: center;
 gap: rem(40);
 }
+.pagination__inner.pagination__inner--single{
+    gap: rem(82);
+}
 .pagination__pages{
     display: flex;
     gap: rem(12);
