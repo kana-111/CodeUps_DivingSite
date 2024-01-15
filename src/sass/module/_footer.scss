@@ -9,6 +9,12 @@
     padding-bottom: rem(40);
   }
 }
+.footer.footer--error404{
+  padding-top: rem(91);
+    @include mq("md") {
+   padding-top: rem(232);
+    }
+}
 
 .footer__inner {
   width: 100%;

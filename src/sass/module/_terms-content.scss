@@ -16,11 +16,11 @@ margin-inline: auto;
 }
 
 .terms-content__text-area{
-    margin-top: rem(40);
+    margin-top: rem(38);
 }
 
 .terms-content__text-unit:not(:first-child){
-    margin-top: rem(40);
+    margin-top: rem(33);
 }
 
 .terms-content__text,
@@ -34,6 +34,6 @@ margin-inline: auto;
 .terms-content__list{
     list-style-type: decimal;
     list-style-position:inside;
-    padding-left: 1em;
+    padding-left: 1.5em;
     text-indent: -1em;
 }

@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .privacy-contact-layout{
-    margin-top: rem(80);
+    margin-top: rem(106);
       @include mq("md") {
-     margin-top: rem(140);
+     margin-top: rem(139);
       }
 }

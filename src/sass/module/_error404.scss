@@ -1,8 +1,9 @@
 @use "global" as *;
 
-.error404-main{
+.error404{
     background-color: $accentGreen;
     padding-top: rem(80);
+
       @include mq("md") {
      padding-top: rem(90);
       }

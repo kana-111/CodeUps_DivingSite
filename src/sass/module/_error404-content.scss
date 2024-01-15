@@ -1,15 +1,4 @@
 @use "global" as *;
-.error404-content__inner{
-    padding-top: rem(52);
-    padding-bottom: rem(44);
-    background-image: url(../images/error404/bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-      @include mq("md") {
-     padding-top: rem(119);
-     padding-bottom: rem(148);
-      }
-}
 
 .error404-content__title,
 .error404-content__text{
@@ -22,6 +11,7 @@
     font-size: rem(80);
     font-family: "Lato",sans-serif;
     letter-spacing: 0.5em;
+    line-height: 1;
       @include mq("md") {
      font-size: rem(160);
       }
@@ -30,8 +20,9 @@
 .error404-content__text{
     font-size: rem(16);
     line-height: calc(24 / 16);
+    margin-top: rem(2);
       @include mq("md") {
-     margin-top: rem(24);
+     margin-top: rem(39);
       }
 }
 
@@ -39,6 +30,6 @@
     margin-top: rem(40);
     text-align: center;
       @include mq("md") {
-     margin-top: rem(80);
+     margin-top: rem(79);
       }
 }
