@@ -1,40 +1,100 @@
 jQuery(function ($) {});
 
-loading;
-const loading = document.querySelector(".js-loading");
-const body = document.querySelector(".js-body");
-window.addEventListener("load", () => {
-  function loadingAnime() {
-    body.classList.toggle("is-active");
-    gsap
-      .timeline()
-      .from(".js-loading-text", {
-        duration: 0.5,
-        autoAlpha: 0,
-      })
-      .from(".loading__image", {
-        duration: 1,
-        autoAlpha: 0,
-        y: 800,
-        stagger: {
-          each: 0.1,
-        },
-      })
-      .from(".js-loading-text-white", {
-        delay: 0.5,
-        duration: 1,
-        autoAlpha: 0,
-      })
-      .to(".js-loading-text-white,.js-loading", {
-        delay: 1,
-        duration: 0.5,
-        autoAlpha: 0,
-        onComplete: function () {
+// loading;
+// const loading = document.querySelector(".js-loading");
+// const body = document.querySelector(".js-body");
+// window.addEventListener("load", () => {
+//   function loadingAnime() {
+//     body.classList.toggle("is-active");
+//     gsap
+//       .timeline()
+//       .from(".js-loading-text", {
+//         duration: 0.5,
+//         autoAlpha: 0,
+//       })
+//       .from(".loading__image", {
+//         duration: 1,
+//         autoAlpha: 0,
+//         y: 800,
+//         stagger: {
+//           each: 0.1,
+//         },
+//       })
+//       .from(".js-loading-text-white", {
+//         delay: 0.5,
+//         duration: 1,
+//         autoAlpha: 0,
+//       })
+//       .to(".js-loading-text-white,.js-loading", {
+//         delay: 1,
+//         duration: 0.5,
+//         autoAlpha: 0,
+//         onComplete: function () {
+//           body.classList.toggle("is-active");
+//         },
+//       });
+//   }
+//   loadingAnime();
+// });
+
+// if (document.cookie.indexOf('visited=yes') === -1) {
+//   document.cookie = 'visited=yes path=/';
+
+// } else {
+//   console.log('2回目です');
+// }
+document.addEventListener("DOMContentLoaded", function () {
+  function webStorage() {
+    var loadingElement = document.querySelector(".loading");
+
+    if (sessionStorage.getItem("access")) {
+      // 2回目以降の訪問時の処理
+      if (loadingElement) {
+        loadingElement.style.display = "none"; // .loading要素が存在する場合のみスタイルを変更
+      }
+    } else {
+      // 初回訪問時の処理
+      sessionStorage.setItem("access", "true"); // sessionStorageにデータを保存
+
+      const body = document.querySelector(".js-body");
+      window.addEventListener("load", () => {
+        function loadingAnime() {
           body.classList.toggle("is-active");
-        },
+          gsap
+            .timeline()
+            .from(".js-loading-text", {
+              duration: 0.5,
+              autoAlpha: 0,
+            })
+            .from(".loading__image", {
+              duration: 1,
+              autoAlpha: 0,
+              y: 800,
+              stagger: {
+                each: 0.1,
+              },
+            })
+            .from(".js-loading-text-white", {
+              delay: 0.5,
+              duration: 1,
+              autoAlpha: 0,
+            })
+            .to(".js-loading-text-white,.js-loading", {
+              delay: 1,
+              duration: 0.5,
+              autoAlpha: 0,
+              onComplete: function () {
+                body.classList.toggle("is-active");
+              },
+            });
+        }
+        if (loadingElement) {
+          loadingAnime(); // .loading要素が存在する場合のみアニメーションを実行
+        }
       });
+    }
   }
-  loadingAnime();
+  webStorage();
 });
 
 // ハンバーガーメニュー
@@ -163,24 +223,39 @@ $(".page-top").click(function () {
 //about-gallery
 jQuery(function ($) {
   $(".js-modal-open").each(function () {
-      $(this).on("click", function (e) {
-          e.preventDefault();
-          var target = $(this).data("target");
-          var modal  = document.getElementById(target);
-          $(modal).addClass("is-active");
-          $(modal).fadeIn();
-          $("html,body").css("overflow", "hidden");
-      });
+    $(this).on("click", function (e) {
+      e.preventDefault();
+      var target = $(this).data("target");
+      var modal = document.getElementById(target);
+      $(modal).addClass("is-active");
+      $(modal).fadeIn();
+      $("html,body").css("overflow", "hidden");
+    });
   });
   $(".js-modal-close").on("click", function () {
     $(".modal").removeClass("is-active");
-      $(".js-modal").fadeOut();
-      $("html,body").css("overflow", "initial");
+    $(".js-modal").fadeOut();
+    $("html,body").css("overflow", "initial");
   });
 });
 
 //tab切り替え
-//任意のタブにURLからリンクするための設定
+
+// // URLを取得
+// let href = new URL(window.location.href);
+
+// // URLSearchParamsオブジェクトを取得
+// let params = href.searchParams;
+
+// // getメソッド
+// // alert("tab>> " + params.get('tab')); // 5
+// // alert("url>> " + href);
+// // alert("params>> " + params);
+
+// let target=$(".campaign-tab__item");
+// console.log(target);
+
+// 任意のタブにURLからリンクするための設定
 function GethashID(hashIDName) {
   if (hashIDName) {
     $(".js-tab-item")
@@ -200,7 +275,6 @@ function GethashID(hashIDName) {
       });
   }
 }
-
 //タブをクリックしたら
 $(".js-tab-item a").on("click", function () {
   var idName = $(this).attr("href"); //タブ内のリンク名を取得
@@ -218,8 +292,8 @@ $(window).on("load", function () {
 
 //toggle
 jQuery(function ($) {
-  $('.js-archive-open,.js-faq-open').on('click', function () {
-      $(this).next().slideToggle();
-      $(this).toggleClass('is-open');
+  $(".js-archive-open,.js-faq-open").on("click", function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass("is-open");
   });
 });

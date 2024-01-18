@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.tab-content__wrap {
+  width: 100%;
+  @include mq("md") {
+    width: 50%;
+  }
+}
+
+.tab-content__title {
+  font-size: rem(24);
+  line-height: 1;
+  color: $deepGreen;
+  padding-bottom: rem(8);
+  border-bottom: rem(1) solid $accentGreen;
+}
+
+.tab-content__text {
+  margin-top: rem(8);
+  font-size: rem(16);
+  line-height: 1.5;
+  color: $deepGreen;
+}
+
+.tab-content__image-wrap {
+  width: 100%;
+  @include mq("md") {
+    width: 50%;
+  }
+}

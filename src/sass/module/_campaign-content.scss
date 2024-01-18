@@ -20,3 +20,24 @@ margin-top: rem(78);
  margin-top: rem(80);
   }
 }
+
+.campaign-content__tab-content{
+  display: none;
+  opacity: 0;
+}
+
+.campaign-content__tab-content.is-active{
+  display: block;
+  animation-name: campaignTab;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes campaignTab {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -20,14 +20,14 @@
   @include mq("md") {
     padding: rem(17) rem(18) rem(17);
     box-shadow: none;
-}
+  }
 }
 .tab__item.active,
-.tab__item:hover{
-    background-color: $accentGreen;
-    @include mq("md") {
-        box-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.25);
-    }
+.tab__item:hover {
+  background-color: $accentGreen;
+  @include mq("md") {
+    box-shadow: rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.25);
+  }
 }
 
 .tab__item a {
@@ -37,7 +37,7 @@
   height: inherit;
   font-size: rem(14);
   color: $accentGreen;
-  height: 100%;
+  height: inherit;
   word-break: auto-phrase;
   @include mq("md") {
     display: flex;
@@ -45,12 +45,12 @@
     justify-content: center;
     align-items: center;
     font-size: rem(24);
-}
+  }
 }
 
 .tab__item a::before {
-    display: none;
-    @include mq("md") {
+  display: none;
+  @include mq("md") {
     content: "";
     display: inline-block;
     width: 100%;
@@ -58,12 +58,12 @@
     max-width: rem(61);
     background-image: url(../images/information/tab-icon.svg);
     background-size: cover;
-}
+  }
 }
 .tab__item.active a::before,
-.tab__item:hover a::before{
-    display: none;
-    @include mq("md") {
+.tab__item:hover a::before {
+  display: none;
+  @include mq("md") {
     content: "";
     display: inline-block;
     width: 100%;
@@ -71,72 +71,11 @@
     max-width: rem(61);
     background-image: url(../images/information/tab-icon-active.svg);
     background-size: cover;
-}
+  }
 }
 
 .tab__item.active a,
 .tab__item:hover a {
-    color: $white;
+  color: $white;
 }
 
-.tab__content-area{
-    display: none;
-    margin-top: rem(16);
-    padding: rem(23) rem(24) rem(23);
-    border: rem(1) solid $accentGreen;
-    opacity: 0;
-    flex-direction: column;
-    gap: rem(8);
-    @include mq("md") {
-        margin-top: rem(24);
-        flex-direction: row;
-        border: rem(2) solid $accentGreen;
-        gap: rem(48);
-        align-items: center;
-    }
-}
-.tab__content-area.is-active{
-    display: flex;
-    animation-name: tabAnime;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes tabAnime{
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-.tab__content{
-    width: 100%;
-      @include mq("md") {
-     width: 50%;
-      }
-}
-
-.tab__content-title{
-    font-size: rem(24);
-    line-height: 1;
-    color: $deepGreen;
-    padding-bottom: rem(8);
-    border-bottom: rem(1) solid $accentGreen;
-    
-}
-
-.tab__text{
-    margin-top: rem(8);
-    font-size: rem(16);
-    line-height: 1.5;
-    color: $deepGreen;
-}
-
-.tab__image-wrap{
-    width: 100%;
-      @include mq("md") {
-     width: 50%;
-      }
-}

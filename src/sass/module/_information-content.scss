@@ -16,3 +16,35 @@
       width: rem(301);
     }
 }
+
+.information-content__tab-content {
+  display: none;
+  margin-top: rem(16);
+  padding: rem(23) rem(24) rem(23);
+  border: rem(1) solid $accentGreen;
+  opacity: 0;
+  flex-direction: column;
+  gap: rem(8);
+  @include mq("md") {
+    margin-top: rem(24);
+    flex-direction: row;
+    border: rem(2) solid $accentGreen;
+    gap: rem(48);
+    align-items: center;
+  }
+}
+.information-content__tab-content.is-active {
+  display: flex;
+  animation-name: informationTab;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes informationTab {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
