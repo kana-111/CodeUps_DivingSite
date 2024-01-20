@@ -10,6 +10,7 @@
   background: $accentGreen;
   font-weight: bold;
   text-align: center;
+  cursor: pointer;
     @include mq("md") {
    padding-bottom: rem(15);
    padding-right: rem(38);

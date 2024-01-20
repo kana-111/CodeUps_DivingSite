@@ -21,6 +21,9 @@ margin-inline: auto;
 
 .terms-content__text-unit:not(:first-child){
     margin-top: rem(33);
+      @include mq("md") {
+     margin-top: rem(32);
+      }
 }
 
 .terms-content__text,

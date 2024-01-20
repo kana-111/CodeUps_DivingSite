@@ -6,8 +6,13 @@
     gap: rem(80);
       @include mq("md") {
      flex-direction: row;
-     gap: rem(86);
+     gap: rem(80);
       }
+}
+.blog-contents__inner.blog-contents__inner--shingle{
+    @include mq("md") {
+   gap: rem(84);
+    }
 }
 .blog-contents__article{
   flex: 1;

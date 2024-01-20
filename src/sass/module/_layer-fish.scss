@@ -40,3 +40,33 @@ left: calc(50% - min(46vw, 33.75rem));
  top: rem(-163);
   }
 }
+.layer-fish__img.layer-fish__img--blog-archive{
+  top: rem(-21);
+    @include mq("md") {
+   top: rem(-70);
+    }
+}
+.layer-fish__img.layer-fish__img--blog-shingle{
+  top: rem(-19);
+    @include mq("md") {
+   top: rem(-65);
+    }
+}
+
+.layer-fish__img.layer-fish__img--information{
+  top: rem(-94);
+}
+
+.layer-fish__img.layer-fish__img--price{
+  top: rem(76);
+    @include mq("md") {
+   top: rem(30);
+    }
+}
+
+.layer-fish__img.layer-fish__img--thanks{
+  top: rem(-21);
+    @include mq("md") {
+   top: rem(-67);
+    }
+}

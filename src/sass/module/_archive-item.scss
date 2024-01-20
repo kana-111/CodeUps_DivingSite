@@ -4,7 +4,7 @@
     margin-top: rem(4);
 }
 .archive-list__item:not(:first-child){
-    margin-top: rem(8);
+    margin-top: rem(3);
 }
 .archive-item__year,
 .archive-item__month {
@@ -15,7 +15,9 @@
     font-weight: $regular;
     color: $accentGreen;
     align-items: center;
-
+}
+.archive-item__month{
+    margin-top: rem(3);
 }
 
 .archive-item__year::before,
@@ -25,11 +27,13 @@
     height: rem(20);
     clip-path: polygon(0 0, 0% 100%, 100% 50%);
     margin-right: rem(10);
-    margin-top: rem(8);
+    margin-top: rem(4);
     background-color: $accentGreen;
     transition: clip-path 0.3s;
 }
-
+.archive-item__month::before{
+    margin-right: rem(6);
+}
 .archive-item__year.is-open::before {
     clip-path: polygon(100% 0, 0 0, 50% 100%);
 }

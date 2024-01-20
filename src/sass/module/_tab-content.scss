@@ -13,6 +13,9 @@
   color: $deepGreen;
   padding-bottom: rem(8);
   border-bottom: rem(1) solid $accentGreen;
+    @include mq("md") {
+   padding-bottom: rem(9);
+    }
 }
 
 .tab-content__text {

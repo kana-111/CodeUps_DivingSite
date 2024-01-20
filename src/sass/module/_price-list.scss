@@ -7,17 +7,11 @@ gap: rem(1);
 flex-direction: column;
 border: $accentGreen rem(1) solid;
 width: 100%;
-max-width: rem(700);
   @include mq("md") {
  flex-direction: row;
   }
 }
-.price-list:not(:first-child) {
-  margin-top: rem(38);
-  @include mq("md") {
-    margin-top: rem(80);
-  }
-}
+
 .price-list__title {
   color: $white;
   font-size: rem(16);
@@ -49,6 +43,8 @@ max-width: rem(700);
     margin-top: rem(8);
   }
 }
+
+
 .price-list__wrap{
     width: 100%;
     display: flex;
@@ -78,7 +74,6 @@ max-width: rem(700);
 
 .price-list__menu {
 width: 69.565%;
-  word-break: auto-phrase;
   justify-content: center;
   text-align: center;
     @include mq("md") {

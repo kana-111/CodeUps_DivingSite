@@ -297,3 +297,4 @@ jQuery(function ($) {
     $(this).toggleClass("is-open");
   });
 });
+

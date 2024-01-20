@@ -7,7 +7,7 @@
 .faq-list__item:not(:first-child){
 margin-top: rem(44);
   @include mq("md") {
- margin-top: rem(40);
+ margin-top: rem(41);
   }
 }
 .faq-list__q-wrap{
@@ -62,13 +62,14 @@ margin-top: rem(44);
 .faq-list__a{
     display: none;
     border: $accentGreen rem(1) solid;
-    padding: rem(21) rem(16) rem(17);
+    padding: rem(21) rem(16) rem(23);
     margin-top: 0;
     font-size: rem(16);
     font-weight: $regular;
     color: $deepGreen;
+    line-height: 1.45;
       @include mq("md") {
      margin-top: rem(16);
-     padding: rem(40) rem(40) rem(34);
+     padding: rem(40) rem(40) rem(36);
       }
 }

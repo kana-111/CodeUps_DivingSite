@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .terms-contact-layout{
-    margin-top: rem(136);
+    margin-top: rem(104);
       @include mq("md") {
      margin-top: rem(139);
       }

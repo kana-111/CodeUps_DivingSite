@@ -38,7 +38,7 @@
   align-items: start;
   padding-left: rem(30);
     @include mq("md") {
-        padding-left: rem(33);
+        padding-left: rem(38);
    
     }
 }
@@ -52,8 +52,8 @@
   background: #fff;
   border: 1px solid $accentGreen;
   display: block;
-  width: rem(15);
-  height: rem(15);
+  width: rem(14);
+  height: rem(14);
 }
 
 .form-checkbox.form-checkbox--privacy input + span::before {
@@ -66,11 +66,11 @@
   content: "";
   margin-top: rem(-2);
   position: absolute;
-  top: rem(5);
-  left: rem(2);
+  top: rem(6);
+  left: rem(3);
   transform: rotate(-45deg);
   display: block;
-  width: rem(10);
+  width: rem(9);
   height: rem(6);
   border-bottom: rem(2) solid $red;
   border-left: rem(2) solid $red;
@@ -79,6 +79,9 @@
 }
 .form-checkbox.form-checkbox--privacy input + span::after {
   left: rem(3);
+  top: rem(5);
+  width: rem(16);
+  height: rem(11);
 }
 .form-checkbox input:checked + span::after {
   opacity: 1;

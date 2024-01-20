@@ -9,12 +9,6 @@
     padding-bottom: rem(40);
   }
 }
-.footer.footer--error404{
-  padding-top: rem(91);
-    @include mq("md") {
-   padding-top: rem(232);
-    }
-}
 
 .footer__inner {
   width: 100%;
@@ -69,7 +63,7 @@
   font-size: rem(12);
   line-height: 1.5;
   text-align: center;
-  text-wrap: nowrap;
+  white-space: nowrap;
   @include mq("md") {
     margin-top: rem(80);
     font-size: rem(14);

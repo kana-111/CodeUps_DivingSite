@@ -1,9 +1,10 @@
 @use "global" as *;
 
 .layout-error404-content{
-    margin-top: rem(60);
+    padding-top: rem(60);
+    padding-bottom: rem(44);
       @include mq("md") {
-     margin-top: rem(135);
-
+     padding-top: rem(135);
+     padding-bottom: rem(153);
       }
 }
