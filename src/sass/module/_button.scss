@@ -78,6 +78,7 @@ padding-left: rem(55);
   font-size: rem(14);
   line-height: 1.571;
   transition: color .3s;
+  font-weight: $regular;
 }
 .button.button--revers .button__text{
 color: $accentGreen;

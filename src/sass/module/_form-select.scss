@@ -13,6 +13,7 @@
     background-position: right rem(8) top rem(10);
     appearance: none;
     cursor: pointer;
+    color: $accentGreen;
       @include mq("md") {
      padding-top: rem(8);
      padding-bottom: rem(8);
